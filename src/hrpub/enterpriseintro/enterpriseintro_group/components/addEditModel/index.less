@@ -1,0 +1,107 @@
+
+@import url('../../../../../hrpub/common/static/fonts/iconfont.css'); 
+.modalBody{
+    overflow:hidden;
+    white-space: nowrap;
+    .modalLeft{
+        float:left;
+        .mlTopMar{
+            margin-top:5px;
+        }
+        .mlDom{
+            .labelText{
+                color:#555;
+                font-size:13px;
+                display:inline-block;
+                width:80px;
+                text-align:left;
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+            .iptName{
+                height:30px;
+                border:1px solid #ccc;
+                border-radius:3px;
+                font-size:13px;
+                color:#111;
+                padding:0px 15px;
+                display:inline-block;
+                width:396px;
+                outline:none;
+                &::placeholder{
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    .modalRight{
+        float:left;
+        margin-left:16px;
+        width:66px;
+        .mrDom{
+            position: relative;
+            width:66px;
+            height:66px;
+            .positionImg{
+                position: absolute;
+                left:0;
+                top:0;
+                width:66px;
+                height:66px;
+                z-index: 4;
+                background:#E4E4E4;
+            }
+            .hr-tupianzhanwei-:before{
+                position:absolute;
+                left:50%;
+                top:50%;
+                margin-left:-20px;
+                margin-top:-12px;
+                color:#fff;
+                font-size:32px;
+            }
+            .uploadImg{
+                width:66px;
+                height:66px;
+                display:block;
+                position: relative;
+                z-index:3;
+            }
+            .uploadAction{
+                width:66px;
+                height:20px;
+                position: absolute;
+                z-index:5;
+                left:0;
+                bottom:0;
+                background:#000;
+                opacity:0;
+                filter:alpha(opacity=0);
+                text-align:center;
+                color:#fff;
+            }
+            .photoUpload{
+                opacity:0;
+                filter:alpha(opacity=0);
+                width:66px;
+                height:20px;
+                position: absolute;
+                left:0;
+                bottom:0;
+                z-index:6;
+            }
+            &:hover .uploadAction{
+                opacity:0.5;
+                filter:alpha(opacity=50);
+                cursor: pointer;
+            }
+        }
+        .mrText{
+            font-size:12px;
+            color:#888;
+            text-align:center;
+            margin-top:5px;
+        }
+    }
+}

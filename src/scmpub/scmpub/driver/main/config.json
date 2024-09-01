@@ -1,0 +1,8 @@
+{
+    "dependModuleName": [
+        "scmpub/scmpub/components/MainOrgRef"
+    ],
+    "dependjs": [
+        "../../components/MainOrgRef/index.js"
+    ]
+}

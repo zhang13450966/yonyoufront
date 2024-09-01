@@ -1,0 +1,10 @@
+export const CHANGE_TRIGGER = Symbol("change_trigger");
+export const CHANGE_OPEN_PLAN = Symbol("change_openPlan");
+export const CHANGE_OPEN_SETTING = Symbol("change_openSetting");
+export const CHANGE_PLAN_LISTS = Symbol("change_plan_lists");
+export const CHANGE_PLAN_CODE = Symbol("change_plan_code");
+export const CHANGE_DEFAULT_PLAN_CODE = Symbol("change_default_plan_code");
+export const CHANGE_LANGINFO = Symbol("change_langinfo");
+export const SET_PRINT_PARAMS = Symbol("set_print_params");
+export const SET_REPORT_ID = Symbol("set_report_id");
+export const IS_PRINT = Symbol("is_print");

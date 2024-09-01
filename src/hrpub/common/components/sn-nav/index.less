@@ -1,0 +1,47 @@
+/**
+ * Created by wanghongxiang on 2018/7/12.
+ */
+html body {
+  height: 100%;
+  #app {
+    background: white;
+  }
+  .sn-nav-arrow {
+    font-size: 12px;
+    .icon {
+      display: inline-block;
+      cursor: pointer;
+      height: 12px;
+      line-height: 12px;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+    .no-drop {
+      cursor: no-drop;
+      color: #cccccc;
+    }
+    // 这样写居然不好使
+    //[class^='sn-before-'] {
+    //  transform: rotate(90deg);
+    //}
+    //[class^='sn-after-'] {
+    //  transform: rotate(-90deg);
+    //}
+    .sn-before-page {
+      transform: rotate(90deg);
+    }
+    .sn-before-one {
+      transform: rotate(90deg);
+    }
+    .sn-after-one {
+      transform: rotate(-90deg);
+    }
+    .sn-after-page {
+      transform: rotate(-90deg);
+    }
+  }
+  .sn-nav-hidden {
+    display: none!important;
+  }
+}
+

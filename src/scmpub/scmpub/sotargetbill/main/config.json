@@ -1,0 +1,14 @@
+{
+	"dependModuleName": [
+		"ic/ic/pub/onhandRefer",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/NCUploader",
+		"uap/common/components/approvalTrans"
+	],
+	"dependjs": [
+		"../../../../ic/ic/pub/onhandRefer/index.js",
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/approvalTrans/index.js"
+	]
+}

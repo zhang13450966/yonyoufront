@@ -1,0 +1,119 @@
+// @import "../../../public/standardStyle/variables.less";
+// 环境变量
+@commentlist-bc-title: #d9d9d9;
+@commentlist-c-modal-title: #474d54;
+@commentlist-c-user-content: #474d54;
+@commentlist-bc-text: #d9d9d9;
+@commentlist-c-text: #707274;
+@commentlist-c-menu: #474d54;
+
+.comment-modal {
+    .u-modal-dialog .u-modal-content {
+        .comment-title {
+            padding: 10px 20px;
+            height: 40px;
+            box-shadow: border-box;
+            border-bottom: 1px solid @commentlist-bc-title;
+            .u-modal-title {
+                padding: 0;
+                font-size: 16px;
+                color: @commentlist-c-modal-title;
+                font-weight: 600 !important;
+            }
+        }
+        .comment-body {
+            padding: 10px 50px 30px 50px;
+            .comment-use-content {
+                font-size: 14px;
+                color: @commentlist-c-user-content;
+                .type {
+                    margin-bottom: 10px;
+                    .type-label {
+                        padding-right: 10px;
+                    }
+                    .radio-group-hotkey-wrapper{
+                        margin-top: 5px;
+                    }
+                }
+                .comment {
+                    .textarea-wrap {
+                        margin-top: 5px;
+                        .comment-text {
+                            height: 78px;
+                            border-radius: 4px;
+                            border: 1px solid @commentlist-bc-text;
+                            padding: 10px;
+                            font-size: 13px;
+                            color: @commentlist-c-text;
+                        }
+                    }
+                }
+                .default {
+                    margin-top: 5px;
+                    .default-label {
+                        padding-right: 10px;
+                    }
+                }
+
+                .comment-use {
+                    .use-item {
+                        overflow: hidden;
+                        margin-bottom: 15px;
+                        .item {
+                            .item-input {
+                                width: 60%;
+                                &:focus {
+                                    border-color: #999;
+                                    // border-color: @border-color-focus;
+                                }
+                            }
+                        }
+                        .btns {
+                            float: right;
+                            .btn {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .use-item-define.browse {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                .use-item-define.edit {
+                    .btns {
+                        text-align: right;
+                        .btn {
+                            margin-left: 30px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comment-menu {
+    padding: 15px 10px;
+    font-size: 13px;
+    color: @commentlist-c-menu;
+    // height: 350px;
+    overflow: auto;
+    &.u-menu-vertical > .u-menu-item, .u-menu-vertical-left > .u-menu-item, .u-menu-vertical-right > .u-menu-item, .u-menu-inline > .u-menu-item, .u-menu-vertical > .u-menu-submenu > .u-menu-submenu-title, .u-menu-vertical-left > .u-menu-submenu > .u-menu-submenu-title, .u-menu-vertical-right > .u-menu-submenu > .u-menu-submenu-title, .u-menu-inline > .u-menu-submenu > .u-menu-submenu-title{
+        height: 30px;
+        line-height: 30px;
+        margin-top: 0;
+        padding: 0 5px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+}
+.comment-menu::-webkit-slider-runnable-track {
+    display: none;
+}
+
+.change-pos-right {
+    right: 24px;
+    left: auto !important;
+}

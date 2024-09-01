@@ -1,0 +1,209 @@
+@border-color: #c6ccd7;
+@field-name-color: #606069;
+@field-value-color: #2b2c42;
+@link-color: #0073e1;
+@link-hover-color: #487ca8;
+@bg-color: #fff;
+@font-color: #333;
+
+// 暗黑主题下颜色变量
+@border-color-black: #39393f;
+@field-name-color-black: #b0b0b0;
+@field-value-color-black: #d9d9d9;
+@link-color-black: #5790ff;
+@link-hover-color-black: #487ca8;
+@bg-color-black: #27272a;
+@font-color-black: #ddd;
+
+#milestone-board-page {
+	display: flex;
+	flex-direction: column;
+	.header-title-search-area {
+		align-items: center;
+	}
+	.chart-area {
+		flex: 1;
+		overflow: auto;
+		background: @bg-color;
+		margin: 4px 8px 2px;
+		padding: 6px;
+		border: 1px solid @border-color;
+		border-radius: 3px;
+		.hide {
+			display: none;
+		}
+	}
+	.no-data-placeholder {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.no-data {
+			background: url(./pic.png) 50%/contain no-repeat;
+			height: 120px;
+			width: 120px;
+		}
+		.no-data-title {
+			margin-top: 16px;
+			font-size: 14px;
+			color: #888;
+		}
+	}
+	.scroll-to-load {
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		cursor: pointer;
+	}
+	.order-wrapper {
+		border: 1px solid @border-color;
+		border-radius: 6px;
+		display: flex;
+		&::before {
+			content: '';
+			width: 6px;
+			border-radius: 5px 0px 0px 5px;
+		}
+		&:not(:first-child) {
+			margin-top: 4px;
+		}
+		&.finished::before {
+			background: linear-gradient(360deg, #a4da89 0%, #85ce61 100%);
+		}
+		&.not-start::before {
+			background: linear-gradient(180deg, #c7c7c7 0%, #dddddd 100%);
+		}
+		&.processing::before {
+			background: linear-gradient(180deg, #40a5ed 0%, #70bbf2 100%);
+		}
+	}
+	.milestone-order {
+		flex: 1;
+		padding-top: 5px;
+		width: calc(~ '100% - 10px');
+		.milestone-order-header {
+			display: flex;
+			overflow: hidden;
+			transition: all 0.2s;
+			&.open {
+				.extra .icon-bottom {
+					transform: rotate(180deg);
+				}
+			}
+
+			.display-fields {
+				flex: 1;
+				margin-right: 20px;
+				.field-item {
+					display: flex;
+					height: 30px;
+					align-items: center;
+					.field-name {
+						font-size: 12px;
+						color: @field-name-color;
+						width: 100px;
+						flex: none;
+						margin-right: 5px;
+						text-align: right;
+					}
+					.field-value {
+						font-size: 12px;
+						color: @field-value-color;
+						&:empty::before {
+							content: '-';
+						}
+						a {
+							color: @link-color;
+						}
+					}
+				}
+			}
+			.extra {
+				line-height: 30px;
+				.icon-bottom {
+					cursor: pointer;
+					color: @font-color;
+					font-size: 8px;
+					transform: rotate(0deg);
+					transition: all 0.2s;
+					padding: 0 6px;
+					margin-left: 12px;
+				}
+			}
+
+			.percent-circle {
+				width: 120px;
+			}
+			.a-link {
+				color: @link-color;
+				cursor: pointer;
+				margin-right: 16px;
+			}
+			svg {
+				cursor: default;
+			}
+		}
+		.milestone-progress {
+			width: 100%;
+			overflow: auto;
+			white-space: nowrap;
+			padding: 5px 0;
+			.percent-circle {
+				display: inline-block;
+				margin: 0 68px;
+				transition: all 0s;
+				svg {
+					cursor: pointer;
+				}
+				&:hover {
+					transform: scale(1.03);
+				}
+			}
+		}
+	}
+}
+
+.title-tip {
+	.tooltip-inner {
+		padding: 4px 8px;
+	}
+}
+
+.nc-lightapp-front-black {
+	#milestone-board-page {
+		.chart-area {
+			background: @bg-color-black;
+			border: 1px solid @border-color-black;
+			.no-data {
+				opacity: 0.5;
+			}
+		}
+		.order-wrapper {
+			border: 1px solid @border-color-black;
+		}
+		.milestone-order {
+			.milestone-order-header {
+				.display-fields {
+					.field-name {
+						color: @field-name-color-black;
+					}
+					.field-value {
+						color: @field-value-color-black;
+						a {
+							color: @link-color-black;
+						}
+					}
+				}
+				.extra {
+					.icon-bottom {
+						color: @font-color-black;
+					}
+					.detail-link {
+						color: @link-color-black;
+					}
+				}
+			}
+		}
+	}
+}

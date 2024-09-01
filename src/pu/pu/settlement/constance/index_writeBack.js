@@ -1,0 +1,192 @@
+const COMMON = {};
+const PAGECODE = {
+	list: '400402400_list',
+	vim: '400402402_list'
+};
+const URL = {
+	queryInvoice: '/nccloud/pu/settle/queryInvoice.do',
+	queryStockIn: '/nccloud/pu/settle/queryStockIn.do',
+	queryVim: '/nccloud/pu/settle/queryVim.do',
+	querySettleRule: '/nccloud/pu/settle/querySettleRule.do',
+	autoSettle: '/nccloud/pu/settle/autoSettle.do',
+	settle: '/nccloud/pu/settle/settle.do',
+	match: '/nccloud/pu/settle/matchSettle.do',
+	feeDistribute: '/nccloud/pu/settle/feeDistribute.do',
+	invoiceDistributeByNum: '/nccloud/pu/settle/invoiceDistributeByNum.do',
+	invoiceDistributeByMny: '/nccloud/pu/settle/invoiceDistributeByMny.do',
+	cancelSetele: '/nccloud/pu/settle/cancelSettle.do',
+	feeAfterEdit: '/nccloud/pu/settle/feeAfterEdit.do',
+	matchAferEdit: '/nccloud/pu/settle/matchAfterEdit.do',
+	linkSettleBill: '/pu/pu/settlebill/main/index.html#/list'
+};
+
+const AREA = {
+	vimSearchArea: 'vimSearchArea',
+	invoiceSearchArea: 'invoiceSearchArea',
+	stockInSearchArea: 'stockInSearchArea',
+	invoiceView: 'invoiceView',
+	stockInVIew: 'stockInView',
+	vimView: 'vimView',
+	feeView: 'feeView'
+};
+
+const BUTTONAREA = {
+	listhead: 'list_head',
+	listinner: 'list_inner',
+	settlehead: 'settle_head'
+};
+const ALLSETTLEFIELD = [
+	'ncostfactor4',
+	'nestnum',
+	'vctcode',
+	'ncostfactor5',
+	'ncostfactor2',
+	'ncurseetlemny',
+	'ncostfactor3',
+	'ncostfactor8',
+	'vbdef9',
+	'ncostfactor6',
+	'ncostfactor7',
+	'vproducenum',
+	'ncansettlenum',
+	'nestmny',
+	'ncostfactor1',
+	'naccumestmny',
+	'ndiscount',
+	'nnoestsettlemny',
+	'invoicesettlevo',
+	'ncurinvoicesettlenum',
+	'vfree1',
+	'nprice',
+	'vbdef10',
+	'vbdef11',
+	'vbdef12',
+	'vfree10',
+	'vbdef13',
+	'vbdef14',
+	'vbdef15',
+	'vbdef16',
+	'vbdef17',
+	'nstockinnum',
+	'pk_billid',
+	'primarykey',
+	'pk_material',
+	'vfree8',
+	'vfree9',
+	'vfree6',
+	'cproductorid',
+	'ctrantypeid',
+	'vfree7',
+	'vfree4',
+	'nnoestsettlenum',
+	'vfree5',
+	'vfree2',
+	'vfree3',
+	'vbdef20',
+	'pk_order_b',
+	'pk_billbid',
+	'bstock',
+	'pk_srcmaterial',
+	'cprojectid',
+	'nsettleavgprice',
+	'vbdef19',
+	'vbdef18',
+	'ncurstocksettlenum',
+	'ncansettlemny',
+	'ncurinvoicesettlemny',
+	'cunitid',
+	'nreasonwastenum',
+	'pk_order',
+	'nadjustmny',
+	'billcode',
+	'vordercode',
+	'ccurrencyid',
+	'stocksettlevo',
+	'vbdef4',
+	'vbdef3',
+	'vbdef2',
+	'binvoice',
+	'naccumestnum',
+	'vbdef1',
+	'vbdef8',
+	'vtrantypecode',
+	'vbdef7',
+	'vbdef6',
+	'vbdef5',
+	'nestprice',
+	'bfee'
+];
+const SETTLTTYPE = {
+	DIFFERENT_MATERIAL: 'DIFFERENT_MATERIAL',
+	FEE: 'FEE',
+	INVOICE_AUTO: 'INVOICE_AUTO',
+	IT_DIFFERENT_MATERIAL: 'IT_DIFFERENT_MATERIAL',
+	IT_FEE: 'IT_FEE',
+	IT_INVOICE_AUTO: 'IT_INVOICE_AUTO',
+	IT_SAME_MATERIAL: 'IT_SAME_MATERIAL',
+	IT_UI_AUTO: 'IT_UI_AUTO',
+	IT_WITHOUT_INVOICE: 'IT_WITHOUT_INVOICE',
+	SAME_MATERIAL: 'SAME_MATERIAL',
+	UI_AUTO: 'UI_AUTO',
+	VOI_CONSUME: 'VOI_CONSUME',
+	VOI_CONSUME_FEE: 'VOI_CONSUME_FEE',
+	WITHOUT_INVOICE: 'WITHOUT_INVOICE'
+};
+const EXECTYPE = { real: 'real', mock: 'mock' };
+const WITHOUTINVOICEFIELD = [
+	'vtrantypecode',
+	'billcode',
+	'pk_material',
+	'ncurstocksettlenum',
+	'cunitid',
+	'nprice',
+	'ncurseetlemny',
+	'ncansettlenum'
+];
+const FEEFIELD = [
+	'vtrantypecode',
+	'billcode',
+	'pk_material',
+	'ncurseetlemny',
+	'ncostfactor1',
+	'ncostfactor2',
+	'ncostfactor3',
+	'ncostfactor4',
+	'ncostfactor5'
+];
+const SAMEMATERIALDIELD = [
+	'vtrantypecode',
+	'billcode',
+	'pk_material',
+	'ncurstocksettlenum',
+	'cunitid',
+	'nprice',
+	'ncurseetlemny',
+	'ncansettlenum',
+	'ncansettlemny'
+];
+const DIFFERENTMATERIALFIELD = [
+	'vtrantypecode',
+	'billcode',
+	'pk_material',
+	'ncurstocksettlenum',
+	'cunitid',
+	'nprice',
+	'ncurseetlemny',
+	'ncansettlenum',
+	'ncansettlemny'
+];
+export {
+	URL,
+	AREA,
+	PAGECODE,
+	COMMON,
+	BUTTONAREA,
+	ALLSETTLEFIELD,
+	FEEFIELD,
+	DIFFERENTMATERIALFIELD,
+	SAMEMATERIALDIELD,
+	WITHOUTINVOICEFIELD,
+	SETTLTTYPE,
+	EXECTYPE
+};

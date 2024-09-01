@@ -1,0 +1,361 @@
+// 颜色变量
+@synctreecom-c-icon-control: #757f8c;
+@t-form-input-placeholder-c: #888888;
+@synctreecom-c-search-icon: #878b94;
+@synctreecom-bc-litem: #d0d0d0;
+@synctreecom-bc-checkbox: #ffffff;
+@synctreecom-bgc-litem-a-active: #ebebf2;
+@synctreecom-c-litem-a-active: #e14c46;
+@synctreecom-bgc-addroot: #f34b4b;
+@synctreecom-c-addroot: #ffffff;
+@synctreecom-bgc-noderightopt: #ebedf2;
+
+@synctreecom-c-wenjian: #f2b224;
+@synctreecom-bgc-dian: #555555;
+@synctreecom-bgc-dian-stop: #c2c2c2;
+@synctreecom-c-search-qingkong: #D2D2D2;
+
+// 主题
+
+@t-form-checkbox-active-bgc: red;
+@t-area-bgc: #fff;
+@t-tree-sich-c: #757f8c;
+@t-tree-sich-bgc: transparent;
+
+
+.syncTreeCom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  //float: left;
+  position: relative;
+  ul,
+  li,
+  span,
+  div {
+    width: max-content;
+  }
+  span {
+    //display:inline-block;
+  }
+
+  .noDrag {
+    .title-con:first-child {
+      cursor: not-allowed;
+    }
+  }
+
+  //.syncTreeSearchInput {
+  //  width: 240px;
+  //  height: 30px;
+  //  -webkit-border-radius: 4px;
+  //  -moz-border-radius: 4px;
+  //  border-radius: 4px;
+  //  border:1px solid #d9d9d9;
+  //  padding-left:10px;
+  //}
+  //.syncTreeSearchInput:focus{
+  //  border-color:#bbdefb
+  //}
+  .icon-control {
+    color: @synctreecom-c-icon-control;
+    font-size: 12px;
+  }
+
+  .u-form-control {
+    //border-color: #d9d9d9;
+    font-size: 13px;
+  }
+  .u-form-control:focus {
+    //border-color: #d0d0d0;
+    outline: 0;
+  }
+
+  .NC_syncTreeSearch {
+    .u-form-control::placeholder {
+      color: @t-form-input-placeholder-c;
+    }
+    margin-bottom: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    &:hover {
+      .syncTreeSearchIcon.qingkong {
+        display: block;
+        color: @synctreecom-c-search-qingkong;
+      }
+    }
+    .syncTreeSearchIcon {
+      position: absolute;
+      right: 10px;
+      top: 7px;
+      color: @synctreecom-c-search-icon;
+      cursor: pointer;
+    }
+    .syncTreeSearchIcon.qingkong {
+      display: none;
+      right: 30px;
+      color: @synctreecom-c-search-qingkong;
+    }
+  }
+  .synctree-area {
+    // min-width: 280px;
+    .u-tree {
+      .node-item:only-child > ul::before {
+        border-left: none;
+      }
+    }
+    .u-tree-child-tree-open {
+      position: relative;
+      padding-left: 19px;
+      & > li:first-child {
+        &::after {
+          position: absolute;
+          left: 8px;
+          top: -10px;
+          content: "";
+          display: inline-block;
+          width: 1px;
+          height: 33px;
+          /* background: red; */
+          border-left: 1px dashed @synctreecom-bc-litem;
+        }
+      }
+      &::before {
+        position: absolute;
+        left: 8px;
+        top: -12px;
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 100%;
+        /* background: red; */
+        border-left: 1px dashed @synctreecom-bc-litem;
+      }
+      &::after {
+        // position: absolute;
+        // left: 31px;
+        // top: 0px;
+        // content: "";
+        // display: inline-block;
+        // width: 1px;
+        // height: 100%;
+        // /* background: red; */
+        // border-left: 1px dashed @synctreecom-bc-litem;
+      }
+    }
+    .node-item + .node-item {
+      &::after {
+        position: absolute;
+        left: 8px;
+        top: -15px;
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 32px;
+        /* background: red; */
+        border-left: 1px dashed @synctreecom-bc-litem;
+      }
+    }
+    .node-item.u-tree-treenode-disabled {
+    }
+    .node-item {
+      position: relative;
+
+      z-index: 2;
+
+      &:last-child > ul::before {
+        border: none;
+      }
+
+      .u-tree-switcher {
+        position: relative;
+        z-index: 2;
+        &::before {
+          position: absolute;
+          left: 11px;
+          top: 8px;
+          content: "";
+          display: inline-block;
+          width: 10px;
+          border-top: 1px dashed @synctreecom-bc-litem;
+        }
+        .icon {
+          position: relative;
+          background: @t-tree-sich-bgc;
+        }
+      }
+      .u-tree-checkbox {
+        .u-tree-checkbox-inner {
+          left: 5px;
+        }
+      }
+      .u-tree-checkbox-checked {
+        .u-tree-checkbox-inner {
+          background: @t-form-checkbox-active-bgc;
+          border-color: @t-form-checkbox-active-bgc;
+        }
+      }
+      .u-tree-node-content-wrapper {
+        margin-left: 1px;
+      }
+    }
+    .isexpend {
+      &::after {
+        position: absolute;
+        left: 8px;
+        top: -15px;
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: none;
+      }
+    }
+
+    flex: 1 1 auto;
+    overflow: auto;
+    width: 100%;
+  }
+  .NC_iconBox {
+    opacity: 0;
+  }
+
+  .NC_iconBox .icon:first-child {
+    margin-left: 20px;
+  }
+
+  .title-con:hover .NC_iconBox {
+    opacity: 1;
+  }
+
+  .edit-icon,
+  .add-icon,
+  .delete-icon {
+    line-height: 30px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .u-tree {
+    padding: 0;
+    // margin-top: 20px;
+  }
+  // 样式提取到ncTree中
+  // .u-tree li a:hover {
+  //     background-color: @synctreecom-bgc-litem-a-active;
+  //     color: @synctreecom-c-litem-a-active;
+  // }
+  // .u-tree li a.u-tree-node-selected .u-tree-title {
+  //     background-color: @synctreecom-bgc-litem-a-active;
+  //     color: @synctreecom-c-litem-a-active;
+  // }
+
+  .title-middle {
+    line-height: 30px;
+    margin-left: 6px;
+  }
+
+  .u-tree li {
+    //height:30px;
+    line-height: 30px;
+  }
+
+  .u-tree-searchable-filter {
+    color: @synctreecom-c-litem-a-active;
+    transition: all 0.3s ease;
+  }
+  .addRoot {
+    color: @synctreecom-c-addroot;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    background: @synctreecom-bgc-addroot;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .active-nodisable {
+    background: @synctreecom-bgc-litem-a-active;
+    width: 100%;
+    color: @synctreecom-c-litem-a-active;
+    .title-middle {
+      color: @synctreecom-c-litem-a-active;
+    }
+  }
+  .title-con {
+    width: max-content;
+    overflow: hidden;
+    min-width: 150px;
+    .title-single {
+      display: inline-block;
+      vertical-align: bottom;
+      // max-width: 280px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .icon {
+      font-size: 18px;
+    }
+    .NC_iconBox {
+      .icon {
+        font-size: 14px;
+      }
+    }
+    input {
+      float: left;
+    }
+  }
+  .node_right_opt {
+    // float:right;
+    // margin-right: 5px;
+    position: absolute;
+    left: 120px;
+    width: 30px;
+    height: 100%;
+    // background-color: @synctreecom-bgc-noderightopt;
+  }
+}
+
+.tree-swich {
+  color: @t-tree-sich-c;
+}
+
+.tree-wenjian {
+  color: @synctreecom-c-wenjian;
+}
+
+.tree-dian {
+  content: ".";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: @synctreecom-bgc-dian;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+// 样式迁移到ncTree
+// .u-tree li a.u-tree-node-selected.u-tree-node-content-wrapper {
+//     background: @synctreecom-bgc-litem-a-active;
+// }
+
+// .disabledSelected > .u-tree-node-content-wrapper {
+//     background: @synctreecom-bgc-litem-a-active;
+//     .title-middle {
+//         color: @synctreecom-c-litem-a-active;
+//     }
+// }
+
+// 停用样式
+.stop-node-dian {
+  background-color: @synctreecom-bgc-dian-stop;
+}
+.stop-node {
+  color: @synctreecom-bgc-dian-stop;
+}

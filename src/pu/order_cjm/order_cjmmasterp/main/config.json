@@ -1,0 +1,16 @@
+{
+    "dependjs": [
+		"../../../../uap/common/components/approvalTrans/index.js",
+		"../../../../uap/common/components/excelImportconfig/index.js",
+		"../../../../uap/common/components/ExcelOutput/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/NCUploader/index.js"
+    ],
+    "dependModuleName": [
+		"uap/common/components/approvalTrans",
+		"uap/common/components/excelImportconfig",
+		"uap/common/components/ExcelOutput",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/NCUploader"
+    ]
+}

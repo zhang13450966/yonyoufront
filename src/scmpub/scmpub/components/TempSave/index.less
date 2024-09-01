@@ -1,0 +1,44 @@
+.tempsave_butn.u-table tr td a {
+	cursor: pointer;
+}
+
+.tempsave_tip.u-tooltip {
+	.tooltip-inner {
+		max-width: initial;
+		.tempsave_tip_font {
+			overflow: auto;
+		}
+	}
+}
+
+.row-data {
+	padding: 5px;
+	line-height: 20px;
+	max-height: 260px;
+	overflow: auto;
+	.summaryLineOne {
+		font-weight: bold;
+		font-size: 12px;
+	}
+	.summaryLineTwo {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.summaryLineOne,
+	.summaryLineTwo {
+		span:not(:first-child)::before {
+			content: ',';
+			margin-right: 8px;
+		}
+	}
+}
+
+.base-nc-tooltip.tempsave_tip {
+	max-width: 700px;
+	.summaryLineTwo {
+		overflow: auto;
+		white-space: normal;
+	}
+}

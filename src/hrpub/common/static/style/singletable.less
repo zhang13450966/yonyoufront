@@ -1,0 +1,50 @@
+// 边框的基本配置
+@border:1px solid @border-color;
+
+
+.single-table {
+	height: calc(~'100% - 120px');
+
+	//想解决flex兼容性问题
+	display: -webkit-flex;  /* 新版本语法: Chrome 21+ */
+	display: flex;          /* 新版本语法: Opera 12.1, Firefox 22+ */
+	display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+	display: -ms-flexbox;   /* 混合版本语法: IE 10 */
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 0px;
+	
+	.table-area {
+		margin: 0px;
+		max-width: 100%;
+		height: 100%;
+		width: 100%;
+		background: @color-white;
+		overflow: auto;
+		&:hover {
+			overflow: auto;
+		}
+	}
+}
+
+/**树卡中 左树  滚动条的样式**/
+.single-table::-webkit-scrollbar{/*整个滚动条区域的宽度*/
+	width:8px;
+}
+.single-table::-webkit-scrollbar-button{/*滚动条上下两边的按钮*/
+	display:none;
+}
+.single-table::-webkit-scrollbar-thumb{/*真滚动条样式*/
+	//-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background:rgba(0,0,0,0.54);
+	border-radius: 100px ;
+}
+.single-table	::-webkit-scrollbar-track {/*滚动条滚动的轨道*/
+	display: none;
+}
+

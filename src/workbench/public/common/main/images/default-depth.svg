@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>默认深图标</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="2.71199678%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#465062" offset="0%"></stop>
+            <stop stop-color="#2A2F38" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="默认深图标">
+            <rect id="矩形-copy-7" stroke="#D3D3D3" fill="#E1E4EB" x="0.5" y="0.5" width="23" height="23" rx="3"></rect>
+            <path d="M2.99208853,0.806158148 L20.84489,0.806158148 C21.9494595,0.806158148 22.84489,1.70158865 22.84489,2.80615815 L22.84489,5.80615815 L22.84489,5.80615815 L0.992088528,5.80615815 L0.992088528,2.80615815 C0.992088528,1.70158865 1.88751903,0.806158148 2.99208853,0.806158148 Z" id="矩形-copy-7" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,153 @@
+@approvedetail-bsc: rgba(0, 0, 0, 0.2);
+@approvedetail-bgc: #fff;
+@approvedetail-bgc-title: #f3f3f3;
+@approvedetail-bc-title: #e9e9e9;
+@approvedetail-c-title-active: #e14c46;
+@approvedetail-head-font-c:#333;
+@approvedetail-bc-detail-inner: #d0d0d0;
+@approvedetail-c-detail-header-left: #555;
+@approvedetail-bgc-shade: #000;
+@approvedetail-table-row-bg: #ddd;
+@approvedetail-menu-hasapprove-c: #0073E1;
+@approvedetail-menu-notapprove-c: #B7C8D9;
+@approvedetail-menu-currlink-c:#37CB64;
+@approvedetail-menu-forecastlink-c:#FFD9B3;
+@approvedetail-menu-font-c:#ddd;
+@approvedetail-menu-bgc: #fff;
+@approvedetail-menu-close-icon: #a5a5a5;
+@approvedetail-menu-list-dark: #717171;
+@approvedetail-menu-list-end: #111;
+.reject-detail {
+  &.u-modal-dialog{
+    height: 96% !important;
+    margin: 0 auto;
+  }
+  .no-data{
+    height: 212px;
+    line-height: 212px;
+    text-align: center;
+    vertical-align: middle;
+    color: #AEAEAE;
+    .uf{
+      margin-right: 8px;
+    }
+  }
+  .u-modal-header{
+    padding: 0 0 0 10px !important;    
+    line-height: 40px;
+  }
+  .u-modal-body{
+    min-height: 412px;
+    max-height: none !important;
+  }
+  .modal-content-resizeWrap{
+      max-height: none !important;
+  }
+  .modal-header-img{
+    vertical-align: none;
+    position: relative;
+    top: -13px;
+  }
+  .name {
+    position: relative;
+    top: -15px;
+    left: 5px;
+    display: inline-block;
+    color: #474d54;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .u-modal-content .u-modal-header{
+    padding: 0 16px;
+  }
+  .nc-tabs {
+    width: 60%;
+    display: inline-block;
+    background-color: transparent;
+    margin-right: 10px;
+  }
+  .u-tabs-top .u-tabs-bar{
+    margin-bottom: 0;
+  }
+  .u-tabs.u-tabs-top.u-tabs-simple.lightapp-component-tabs .u-tabs-bar,
+  .u-tabs.u-tabs-top.u-tabs-simple.lightapp-component-tabs{
+    background-color: transparent;
+  }
+
+  .detail {
+    width: 100%;
+    max-width: none !important;
+    .img {
+      text-align: center;
+    }
+    .hide-detail-img {
+      display: none;
+    }
+    .detail-btn {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      z-index: 1;
+    }
+    .reject-dagre.dagre-area {
+      width: 100%;
+      .dagre-extract {
+        position: absolute;
+        display: none;
+        top: 15px;
+        right: 100px;
+      }
+    }
+  }
+  //新增审批详情部分功能
+  .detail-header-right {
+    margin: -2px 70px 0 0;
+    float: right;
+    .nc-select-wrapper{
+        width: auto;
+    }
+  }
+  .detail-header-left{
+    float: left;
+  }
+  .detail-header {
+    .rt{
+        float: right;
+    }
+    .switch-hotkey-wrapper{
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 13px;
+        color: @approvedetail-head-font-c;
+    }
+    .detail-header-left {
+        float: left;
+        font-size: 13px;
+        font-family: MicrosoftYaHei;
+        color: @approvedetail-c-detail-header-left;
+        line-height: 17px;
+    }
+    .color-item{
+        display: inline-block;
+        margin-right: 6px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    .has-approve{
+        background-color: @approvedetail-menu-hasapprove-c;
+    }
+    .not-approve{
+        background-color: @approvedetail-menu-notapprove-c;
+    }
+    .curr-link{
+        background-color: @approvedetail-menu-currlink-c;
+    }
+    .forecast-link{
+        background-color: @approvedetail-menu-forecastlink-c;
+    }
+  }
+}

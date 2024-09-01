@@ -1,0 +1,45 @@
+.container {
+	.row-header {
+		display: flex;
+		min-height: 30px;
+		padding: 6px 20px;
+		> :first-child {
+			display: flex;
+			flex: 1;
+			justify-content: space-between;
+		}
+	}
+	.row-main {
+		display: flex;
+		border-top: 1px solid #d6d6d6;
+		// .col-left {
+		// 	flex: 1;
+		// }
+		.col-content {
+			// flex: 1;
+            overflow: hidden;
+			width: 100%;
+			// height: 100%;
+			// border: 1px solid #d6d6d6;
+			border-top: 0;
+			&.mod-vline {
+				border-left: 1px solid #d6d6d6;
+			}
+		}
+	}
+}
+#app .row-header .ncc-hr-back {
+	line-height: 30px;
+}
+.nc-lightapp-front-black {
+	.container {
+		.row-main {
+			border-top-color: #39393f;
+			.col-content {
+				&.mod-vline {
+					border-left-color: #39393f;
+				}
+			}
+		}
+	}
+}

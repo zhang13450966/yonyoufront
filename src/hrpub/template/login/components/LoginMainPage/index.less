@@ -1,0 +1,60 @@
+.login-main-page {
+    position: relative;
+    height: 100%;
+    // min-height: 812px;
+    
+    .login-main-page-up-content {
+        width: 100%;
+        height: 223px;
+        padding-top: 131px;
+        box-sizing: border-box;
+        text-align: center;
+
+        .login-main-page-logo {
+            display: inline-block;
+            width: 100px;
+            height: 92px;
+            background: url(../../../../public/images/login-logo.png);
+        }
+    }
+
+    .login-main-page-down-content {
+        padding-top: 60px;
+
+        .login-main-page-item-wrapper {
+            height: 44px;
+            width: 74.4%;
+            margin: 0 auto;
+            margin-bottom: 12px;
+
+            .login-main-page-input {
+                height: 100%;
+                background: rgba(240, 240, 240, 1);
+                border-radius: 4px;
+            }
+
+            &.login-button {
+                margin-top: 20px;
+            }
+
+            .login-main-page-login-button {
+                background: #E14C46;
+                border-radius: 4px;
+
+                &:before {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+    .login-main-forget-pwd {
+        color: #555555;
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 16px;
+    }
+}

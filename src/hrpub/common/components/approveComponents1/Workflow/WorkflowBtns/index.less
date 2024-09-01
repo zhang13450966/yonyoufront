@@ -1,0 +1,69 @@
+@workflowbtns-bgc-second: #e4e4e4;
+@workflowbtns-bc-reject-list: #d0d0d0;
+@workflowbtns-c-reject-list-after: #555;
+@workflowbtns-c-reject-list-hover: #e14c46;
+@workflowbtns-c-reject-menu: #474d54;
+
+.approve-btns {
+    display: inline-block;
+    .btns {
+        .user-refer {
+            display: inline-block;
+        }
+        .button-primary {
+        }
+        .button-second {
+            background: @workflowbtns-bgc-second;
+        }
+        .reject-btns {
+            margin-left: 10px;
+            display: inline-block;
+            // border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            .reject-btn {
+                margin-left: 0;
+                min-width: 50px;
+                height: 30px;
+                padding-right: 5px;
+                border-radius: 3px 0px 0px 3px;
+            }
+            .reject-list {
+                display: inline-block;
+                vertical-align: top;
+                width: 20px;
+                // margin-left: 1px;
+                position: relative;
+                border: 1px solid @workflowbtns-bc-reject-list;
+                // border-left: 1px solid #d9d9d9;
+                border-radius: 0px 3px 3px 0px;
+                height: 30px;
+                cursor: pointer;
+                &:before {
+                    position: absolute;
+                    top: 10px;
+                    right: 3px;
+                    // color: @workflowbtns-c-reject-list-after;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.reject-menu {
+    padding: 10px 0px;
+    font-size: 13px;
+    color: @workflowbtns-c-reject-menu;
+    .u-dropdown-menu-item {
+        line-height: 25px;
+        height: 25px;
+        margin-top: 0;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .u-dropdown-menu-item.menu-item {
+        padding: 0;
+        cursor: pointer;
+    }
+}

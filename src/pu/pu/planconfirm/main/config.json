@@ -1,0 +1,20 @@
+{
+	"dependModuleName": [
+		"uap/common/components/NCUploader",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/approvalTrans",
+		"scmpub/scmpub/components/BillCodeStyle",
+		"uap/common/components/printOnClient",
+		"uap/common/components/printlimitModal",
+		"scmpub/scmpub/components/ResumeModal"
+	],
+	"dependjs": [
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/approvalTrans/index.js",
+		"../../../../scmpub/scmpub/components/BillCodeStyle/index.js",
+		"../../../../uap/common/components/printOnClient/index.js",
+		"../../../../uap/common/components/printlimitModal/index.js",
+		"../../../../scmpub/scmpub/components/ResumeModal/index.js"
+	]
+}

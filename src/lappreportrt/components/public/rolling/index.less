@@ -1,0 +1,109 @@
+.rolling-box {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: calc(~"100% - 20px");
+}
+.rolling {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .filter {
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .empty {
+        margin-left: 5px;
+        cursor: pointer;
+        color: #0073e1;
+    }
+
+    .pager-select {
+        margin-left: 10px;
+    }
+
+    .pager-title {
+        font-size: 12px;
+        font-weight: 400;
+        color: #555555;
+        display: inline-block;
+        margin-right: 3px;
+        // width: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: right;
+    }
+
+    .pager {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        height: 40px;
+
+        .icon-qingkong {
+            display: none !important;
+        }
+
+        .up-down {
+            display: inline-block;
+            //width: 227px;
+            line-height: 28px;
+            height: 28px;
+            text-indent: 8px;
+            font-size: 12px;
+            border: 1px solid #d9d9d9;
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+            padding-right: 13px;
+            color: #555555;
+
+            &.next {
+                width: 240px;
+            }
+
+            .display {
+                display: inline-block;
+                width: 100%;
+                padding-right: 18px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .icon-canzhao {
+            font-size: 12px;
+            color: #555555;
+            position: absolute;
+            right: 8px;
+            top: 0;
+            text-indent: 0;
+        }
+    }
+
+    .border-left-none {
+        display: inline-block;
+        width: 30px;
+        height: 28px;
+        border: 1px solid #d9d9d9;
+        line-height: 28px;
+        text-align: center;
+        background-color: rgba(9, 30, 66, 0.04);
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0 2px;
+        border-left: 0;
+
+        &.disabled {
+            pointer-events: none;
+            cursor: default;
+            opacity: 0.6;
+        }
+    }
+}

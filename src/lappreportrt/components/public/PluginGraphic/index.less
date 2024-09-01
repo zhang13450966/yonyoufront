@@ -1,0 +1,56 @@
+.graphic-box {
+    height: 100%;
+    position: relative;
+    margin-left: 2px;
+
+    .no-drill-area {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .graphic-tab-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-left: 1px solid #d8d8d8;
+        //margin-left: 1px;
+        .tab-container {
+            height: 31px;
+        }
+        .graphic-app {
+            flex: 1;
+        }
+
+        .siderbar-container {
+            flex: 1;
+            height: calc(~"100% - 31px");
+
+            &.no-tab {
+                height: 100%;
+
+                .ht_clone_left {
+                    height: 100% !important;
+                }
+            }
+
+            .hot-table {
+                height: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+            .tab-container-report {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .pagintion {
+                    border-bottom: 1px solid #d8d8d8;
+                }
+            }
+        }
+    }
+}

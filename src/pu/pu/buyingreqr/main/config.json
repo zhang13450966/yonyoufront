@@ -1,0 +1,20 @@
+{
+	"dependModuleName": [
+		"ic/ic/components/onhandRefer",
+		"epmp/exports/components/Inspection",
+		"uap/common/components/NCUploader",
+		"scmpub/scmpub/components/ResumeModal",
+		"uap/common/components/printOnClient",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/printlimitModal"
+	],
+	"dependjs": [
+		"../../../../ic/ic/components/onhandRefer/index.js",
+		"../../../../epmp/exports/components/Inspection/index.js",
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../scmpub/scmpub/components/ResumeModal/index.js",
+		"../../../../uap/common/components/printOnClient/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/printlimitModal/index.js"
+	]
+}

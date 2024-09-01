@@ -1,0 +1,65 @@
+/* 样式覆盖文件 by TsingM */
+// 全局
+#app {
+  min-width:100%!important;
+  max-width:100%!important;
+}
+html body{
+  padding:0px;
+}
+// 按钮button
+button.u-button {
+  font-size: 12px;
+}
+button.default {
+  color: #474d54;
+  background-color: #f5f7f8;
+}
+button.danger {
+  color: #fff;
+  background:#e14c46;
+}
+.dividerButton-component button:first-child, .dividerButton-component button:nth-child(2) {
+  background: #f5f7f8;
+  color: #474d54;
+}
+
+// 开关switch
+.u-switch.is-checked {
+  background-color: #cdf2e3;
+  border-color: #cdf2e3;
+}
+.u-switch.is-checked:after {
+  background: #00cb7c;
+}
+
+// 输入框input
+input.u-form-control[disabled] {
+  background-color: #f5f7f8;
+}
+
+// 弹窗modal
+.u-modal-backdrop {
+  z-index: 10;
+}
+.check-modal.nc-modal.u-modal .u-modal-dialog .u-modal-content{
+  height: 160px;
+}
+// 菜单
+.u-menu {
+  .u-menu-item-group-title {
+    display: none;
+  }
+  .u-menu-item {
+    cursor: pointer;
+  }
+}
+
+// 分页
+.u-pagination > li > a, .u-pagination > li > span {
+  padding: 0;
+  line-height: 25px
+}
+.simpleTable-component-paginationDiv {
+  margin-top: 10px;
+}

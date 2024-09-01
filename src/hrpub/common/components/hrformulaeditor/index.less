@@ -1,0 +1,172 @@
+.mixin(@background-color, @font-color,@border-color,@area-color) {
+  .hr-formula-header {
+    // padding: 0 15px;
+    // background: #ffffff;
+    // height: 66px;
+    // line-height: 66px;
+    // border-bottom: 1px solid #DEE0E3;
+    // border-bottom: 1px solid @border-color;
+    &-name {
+      // font-size: 19px;
+      // color: #474D54;
+      letter-spacing: 0;
+    }
+  }
+  .hr-formula-body {
+    padding: 0 15px;
+    &-header {
+      height: 52px;
+      line-height: 52px;
+      .wui-checkbox {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        /* height: 16px; */
+        line-height: 10px;
+        font-size: 14px;
+      }
+      span {
+        color: @font-color;
+      }
+      &-btns {
+        float: right;
+        line-height: 52px;
+      }
+    }
+    &-container {
+      &-item {
+        .item-content {
+          height: 506px;
+          max-height: 506px;
+          overflow: auto;
+          border: 1px solid @border-color;
+          &-area-content {
+            border: 0;
+          }
+          &-header {
+            padding: 4px 10px;
+            // border-bottom: 1px solid @color;
+            border-bottom: 1px solid @border-color;
+            height: 26px;
+            span {
+              font-size: 12px;
+              color: @font-color;
+              line-height: 17px;
+            }
+            &-line {
+              // border-bottom: 1px solid #B8DDEF;
+              border-bottom: 1px solid @border-color;
+            }
+          }
+          &-area {
+            padding: 0 20px;
+            height: 398px;
+            // background: #E4F4FC;
+            // background: @color;
+            // border: 1px solid #CAE1ED;
+            background: @area-color;
+            // border: 1px solid @border-color;
+          }
+          &-btns {
+            font-size: 14px;
+            color: @font-color;
+            &-top {
+              margin-top: 6px;
+              width: 105px;
+              // background: #ECF2F5;
+              border-radius: 2px;
+            }
+            &-bottom {
+              margin-top: 6px;
+              width: 86px;
+              // background: #ECF2F5;
+              border-radius: 2px;
+            }
+          }
+          .floatLeft {
+            width: 50%;
+            display: inline-block;
+            float: left;
+          }
+          &-list {
+            padding: 5px 10px;
+            &-item {
+              min-height: 478px;
+              height: auto;
+              &:nth-child(2) {
+                // border-left: 1px solid @color;
+                border-left: 1px solid @border-color;
+              }
+            }
+            &-li {
+              cursor: pointer;
+              font-size: 12px;
+              color: @font-color;
+              line-height: 28px;
+
+              &-active {
+                color: red !important;
+              }
+
+              &:hover {
+                // background: #F4F5F7;
+                background: @background-color;
+                &:after {
+                  content: ">";
+                  float: right;
+                  margin-right: 5px;
+                }
+              }
+            }
+            &-field {
+              padding: 0 10px;
+              cursor: pointer;
+              font-size: 12px;
+              color: @font-color;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+    .hr-formula-text {
+      font-size: 12px;
+      color: @font-color;
+      line-height: 17px;
+      padding: 8px 5px;
+    }
+  }
+  .wui-modal-footer {
+    border-top: 0px solid;
+  }
+  .hr-icon-tree {
+    // color: #474D54;
+    color: @font-color;
+    font-size: 12px;
+  }
+  .wui-tree-title {
+    color: @font-color;
+  }
+  .item-content-area {
+    height: 345px !important;
+  }
+  .hr-formula-area {
+    width: 100%;
+    height: 319px;
+    max-height: 367px;
+    min-height: 319px;
+    // background: rgb(231, 245, 252);
+    background: @area-color;
+    border-color: transparent;
+    color: @font-color;
+    margin: 0px;
+  }
+}
+.hr-formula {
+  .mixin(#d0d0d0, #474d54, #d0d0d0, #e4f4fc);
+}
+.workbench-black {
+  .hr-formula {
+    .mixin(#2b2b30, #b0b0b0, #39393f, #35353c);
+  }
+}

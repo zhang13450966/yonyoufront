@@ -1,0 +1,24 @@
+.hr-ajax-loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    background: rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    transition: all .3s;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        transition: all .3s;
+    }
+    span {
+        position: absolute;
+        left: calc(50% - 30px);
+        top: calc(50% + 60px);
+    }
+}

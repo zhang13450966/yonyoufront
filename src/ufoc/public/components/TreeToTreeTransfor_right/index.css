@@ -1,0 +1,46 @@
+.reportedRecorded {
+  color: #f40;
+}
+.reported {
+  color: #0c88fe;
+}
+.notReport {
+  color: #6b6b6b;
+}
+#personalBtn {
+  height: 30px;
+  width: 80px;
+  background-color: #fff;
+}
+#personalBtnOne {
+  height: 30px;
+  width: 80px;
+  color: #f40;
+  background-color: #fff;
+}
+#personalBtnTwo {
+  height: 30px;
+  width: 80px;
+  color: #0c88fe;
+  background-color: #fff;
+}
+#personalBtnThree {
+  height: 30px;
+  width: 80px;
+  color: #6b6b6b;
+  background-color: #fff;
+}
+div#myTitle {
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px 3px 0 0;
+  background: #f3f3f3;
+  padding: 0 10px;
+}
+div#myTitle::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+/*# sourceMappingURL=index.css.map */

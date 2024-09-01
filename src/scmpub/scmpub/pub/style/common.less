@@ -1,0 +1,245 @@
+/*
+ * @Author: hufei 
+ * @PageInfo: 公共样式
+ * @Date: 2018-03-27 10:46:29 
+ * @Last Modified by: hufei
+ * @Last Modified time: 2018-07-10 14:23:03
+ */
+
+@import './variable.less';
+// @import './checkbox.less';
+@import './scrollbar.less';
+// @import './tree_card_table.less';
+// @import './body.less';
+
+// 边框的基本配置
+.border {
+	border-bottom: 1px solid @border-color;
+}
+
+// 头部
+.header {
+	&:extend(.border);
+	height: 60px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+
+	// 头部标题
+	.title {
+		margin-right: 20px;
+		font-size: 16px;
+		font-weight: 600;
+		display: inline;
+	}
+	// 头部按钮组
+	.btn-group {
+		display: inline-block;
+		margin-left: auto;
+		.button-component {
+			margin-left: 10px;
+			margin-right: 0;
+		}
+	}
+	// 显示停用复选框
+	.showOff {
+		margin-left: 10px;
+		.u-checkbox-label {
+			font-size: 13px;
+			color: @font-color;
+			&::before,
+			&::after {
+				top: 0;
+			}
+		}
+	}
+}
+
+// 简单搜索框
+.search-box {
+	width: 240px;
+	height: 30px;
+	margin-right: 20px;
+	input {
+		margin-left: 0;
+	}
+}
+
+// 查询条件的更多按钮
+.more {
+	text-decoration: none;
+	font-size: 14px;
+	color: @color-primary;
+	&:hover {
+		color: @color-primary;
+		text-decoration: none;
+	}
+	margin-right: 20px;
+	user-select: none;
+	text-decoration: none;
+}
+
+// 主要按钮，彩色  加类名btn-color
+.u-button.btn-color {
+	background-color: @color-primary;
+	color: @color-white;
+	&:hover {
+		background-color: @color-primary-hover;
+	}
+	&:active {
+		background-color: @color-primary-active;
+	}
+	&:disabled {
+		background-color: @color-disabled;
+		color: @font-disabled-color;
+	}
+}
+button {
+	user-select: none;
+}
+
+// 次要按钮，灰色  加类名 btn-gray
+.u-button.btn-gray {
+	background-color: @color-secondary;
+	color: @font-color;
+	&:hover {
+		background-color: @color-secondary;
+	}
+	&:active {
+		background-color: @color-secondary-active;
+		color: @color-secondary-active-font;
+	}
+	&:disabled {
+		background-color: @color-disabled;
+		color: @font-disabled-color;
+	}
+}
+
+// 查询区
+.search-area {
+	&:extend(.border);
+	min-height: 60px;
+	padding: 10px;
+}
+// 表单区域
+.form-area {
+	&:extend(.border);
+	// padding: 20px 0;
+}
+// 表格区域
+.table-area {
+	&:extend(.border);
+	.header {
+		.title {
+			font-size: 13px;
+			padding-left: 10px;
+			position: relative;
+			font-weight: 400;
+			&::before {
+				background-color: @color-primary;
+				content: "";
+				width: 4px;
+				height: 8px;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -4px;
+			}
+		}
+	}
+	.editTable-browseIcons {
+		margin-right: 0;
+		margin-left: auto;
+		display: flex;
+		i {
+			width: 30px;
+			height: 30px;
+			background: #eaeef6;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 2px;
+			margin-left: 2px;
+			cursor: pointer;
+		}
+	}
+}
+
+// a 标签样式
+a {
+	color: @link-color;
+	&:hover {
+		color: @link-hover;
+	}
+}
+
+// 覆盖 平台组件样式
+.lightapp-component-form {
+	border: none;
+}
+.lightapp-component-affix {
+	border: none;
+	width: 100%;
+	padding: 0;
+	left: 0;
+	top: 0;
+}
+
+.button-component {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.u-button.button-component.btn-color {
+	background-color: @color-primary;
+	color: @color-white;
+	&:hover {
+		background-color: @color-primary-hover;
+	}
+	&:active {
+		background-color: @color-primary-active;
+	}
+	&:disabled {
+		background-color: @color-disabled;
+		color: @font-disabled-color;
+	}
+}
+
+.u-button.button-component.btn-gray {
+	background-color: @color-secondary;
+	color: @font-color;
+	&:hover {
+		background-color: @color-secondary;
+	}
+	&:active {
+		background-color: @color-secondary-active;
+		color: @color-secondary-active-font;
+	}
+	&:disabled {
+		background-color: @color-disabled;
+		color: @font-disabled-color;
+	}
+}
+
+.nc-input.u-form-control {
+	// border-color: @input-border-color;
+	border-radius: 2px;
+	&:focus {
+		border-color: @color-primary;
+	}
+}
+.table-area {
+	border: none;
+	.lightapp-component-editTable {
+		padding: 0;
+		.u-table-content .u-table-body table {
+			border-top: none;
+		}
+	}
+}
+
+.u-tabs.u-tabs-top.u-tabs-simple.lightapp-component-tabs {
+	padding: 0;
+	border-bottom: none;
+}
+
+// tinper组件样式覆盖

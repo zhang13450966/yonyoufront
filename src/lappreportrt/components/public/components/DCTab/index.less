@@ -1,0 +1,232 @@
+.dc-tab {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .top-tab-tool {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 20px;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: #f6f6f6;
+        .tool-item {
+            line-height: 26px;
+            width: 24px;
+            height: 26px;
+            text-align: center;
+            color: #464d5b;
+            background-color: #f6f6f6;
+            cursor: pointer;
+            .icon-shangyiye {
+                margin-right: -5px;
+            }
+            .icon-xiayiye {
+                margin-left: -5px;
+            }
+            &:hover {
+                background: #d9d9d9;
+                border-radius: 2px;
+            }
+        }
+        .tool-item.disable {
+            cursor: not-allowed;
+            opacity: 0.65;
+            filter: alpha(opacity=65);
+            box-shadow: none;
+        }
+    }
+    .dv-tab-nav-scroll {
+        width: 9999999px;
+        .visibel-container {
+            font-size: 12px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            overflow: auto;
+            .context-menu-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                //pointer-events:none;
+            }
+            .dc-tab-pane {
+                color: #555;
+                &:hover {
+                    color: #000;
+                }
+                .transform-contant {
+                    line-height: 22px;
+                    background: linear-gradient(
+                        180deg,
+                        #ffffff 0%,
+                        #e5e5e5 100%
+                    );
+                    background: linear-gradient(
+                        180deg,
+                        var(--pui-black-derived-color-10, #ffffff) 0%,
+                        var(--pui-black-derived-color-11, #e5e5e5) 100%
+                    );
+                    padding: 2px 4px 2px 8px;
+                    font-size: 12px;
+                    font-family: PingFangHK-Regular, PingFangHK;
+                    font-weight: 400;
+                    color: #555555;
+                    cursor: pointer;
+                    box-shadow: 0px 1px 1px 0px rgba(208, 208, 208, 0.5);
+                    border-radius: 4px 4px 0px 0px;
+                    border: 0.5px solid #cccccc;
+                    .custom-icon {
+                        font-size: 12px;
+                    }
+                    .dirty {
+                        &:before {
+                            font-size: 6px;
+                            color: red;
+                            content: "\2022";
+                        }
+                    }
+                    .close-icon {
+                        display: inline-block;
+                        color: rgba(0, 0, 0, 0);
+                        &:after {
+                            font-size: 6px;
+                            content: "\2715";
+                        }
+                    }
+                    &:hover {
+                        .close-icon {
+                            color: #555555;
+                            &:hover {
+                                color: #000000;
+                            }
+                        }
+                    }
+                    .label {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        margin-right: 4px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .dc-tab-pane.active {
+                .transform-contant {
+                    font-weight: 500;
+                    color: var(--pui-black-font-color-6, #fa6400);
+                    background: linear-gradient(
+                        360deg,
+                        #ffe0cb 0%,
+                        #ffffff 100%
+                    );
+                    background: linear-gradient(
+                        360deg,
+                        var(--pui-black-derived-color-13, #ffe0cb) 0%,
+                        var(--pui-black-derived-color-14, #ffffff) 100%
+                    );
+                    box-shadow: 0px 0px 0px 0px rgba(155, 115, 115, 0.5);
+                    border-radius: 4px 4px 0px 0px;
+                    border-left: 0.5px solid transparent;
+                    border-top: 0.5px solid #fff;
+                    border-right: 0;
+                }
+                .transform-right {
+                    background: linear-gradient(
+                        360deg,
+                        #ffe0cb 0%,
+                        #ffffff 100%
+                    );
+                    background: linear-gradient(
+                        360deg,
+                        var(--pui-black-derived-color-13, #ffe0cb) 0%,
+                        var(--pui-black-derived-color-14, #ffffff) 100%
+                    );
+                    box-shadow: 0px 0px 1px 0px rgba(155, 115, 115, 0.5);
+                    border-right: 0.5px solid rgba(255, 255, 255, 0.3);
+                    border-bottom: 0.5px solid #ffe0cb;
+                }
+            }
+        }
+    }
+}
+// 新增 by GuoHaoci 解决前面有多选时first不为梯形
+.transform-tabs {
+    .dc-tab {
+        .dc-tab-pane:first-child {
+            // -webkit-clip-path: polygon(23% 0, 99% 0, 100% 100%, 0% 100%) ;
+            // clip-path: polygon(4% 0, 99% 0, 100% 100%, 0% 100%);
+            position: relative;
+            margin-right: 14px;
+            .transform-contant {
+                line-height: 20px;
+                transform-origin: bottom;
+                transform: skew(-30deg, 0deg);
+                border-radius: 4px 4px 0px 0px;
+                border-right: none;
+                border-bottom: none;
+                box-shadow: 0px 0px 0px 0px rgba(208, 208, 208, 0.5);
+                .label {
+                    display: inline-block;
+                    vertical-align: top;
+                    // li {
+                    //     margin-top: 2px;
+                    // }
+                    transform: skew(30deg, 0deg);
+                }
+                .close-icon {
+                    transform: skew(30deg, 0deg);
+                }
+            }
+            .transform-right {
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 20px;
+                z-index: -1;
+                margin-right: -14.5px;
+                margin-bottom: -1px;
+                border-radius: 0px 4px 0px 0px;
+                position: absolute;
+                border-right: 0.5px solid #cccccc;
+                border-bottom: 0.5px solid #cccccc;
+                background: linear-gradient(
+                    180deg,
+                    var(--pui-black-derived-color-10, #ffffff) 0%,
+                    var(--pui-black-derived-color-11, #e5e5e5) 100% #ffffff 0%,
+                    #e5e5e5 100%
+                );
+            }
+        }
+    }
+}
+
+.report-list-container {
+    padding: 13px 0;
+
+    .list-item {
+        height: 28px;
+        line-height: 28px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 13px;
+        font-family: PingFangHK-Regular, PingFangHK;
+        font-weight: 400;
+        color: #111111;
+        cursor: pointer;
+        padding: 0 10px;
+        &:hover {
+            background: #fbe2cf;
+        }
+        .list-icon {
+            width: 16px;
+            display: inline-block;
+            font-size: 8px;
+        }
+    }
+}

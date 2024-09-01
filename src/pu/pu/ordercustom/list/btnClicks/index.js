@@ -1,0 +1,18 @@
+import searchBtnClick from './searchBtnClick';
+import pageInfoBtnClick from './pageInfoBtnClick';
+import refreshBtnClick from './refreshBtnClick';
+import { BUTTONID } from '../../constance';
+import printBtnClick from './printBtnClick';
+
+function buttonClick(props, id) {
+	switch (id) {
+		case BUTTONID.Print:
+			printBtnClick.call(this, props);
+			break;
+		case BUTTONID.Refresh:
+			refreshBtnClick.call(this, props);
+			break;
+	}
+}
+
+export { buttonClick, searchBtnClick, pageInfoBtnClick };

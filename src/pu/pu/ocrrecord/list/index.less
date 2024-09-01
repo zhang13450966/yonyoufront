@@ -1,0 +1,14 @@
+.cost-region {
+	width: 220px;
+}
+.required {
+	position: relative;
+	&::before {
+		content: "*";
+		position: absolute;
+		z-index: 3;
+		left: 3px;
+		top: 10px;
+		color: red;
+	}
+}

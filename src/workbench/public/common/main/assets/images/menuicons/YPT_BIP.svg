@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>云平台</title>
+    <defs>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-1">
+            <stop stop-color="#00B4FA" offset="0%"></stop>
+            <stop stop-color="#00D0FD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-2">
+            <stop stop-color="#00B4FA" offset="0%"></stop>
+            <stop stop-color="#00D0FD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-3">
+            <stop stop-color="#00B4FA" offset="0%"></stop>
+            <stop stop-color="#00D0FD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="云平台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组备份" transform="translate(8.000000, 18.000000)">
+            <path d="M26.988093,26.4287536 L26.988093,37 L10.7949767,37 C4.83293023,37 0,32.2672342 0,26.4287536 C0,20.590273 4.83293023,15.8568696 10.7949767,15.8568696 C16.7570233,15.8568696 21.5906047,20.590273 21.5906047,26.4287536 L26.988093,26.4287536 L26.988093,26.4287536 Z" id="路径" fill="url(#linearGradient-1)"></path>
+            <path d="M47.2288372,18.5 C47.2288372,24.4934338 44.3187907,29.8205053 39.8068837,33.2014167 L39.8068837,37 L28.3373023,37 C17.9037209,37 9.44576744,28.7173411 9.44576744,18.5 C9.44576744,8.2826589 17.9037209,0 28.3373023,0 C38.7708837,0 47.2288372,8.2826589 47.2288372,18.5 Z" id="路径" fill="url(#linearGradient-2)"></path>
+            <path d="M26.3134884,22.4643768 C26.3134884,30.4921798 32.9590404,37 41.1567442,37 C49.354448,37 56,30.4921798 56,22.4643768 C56,14.4365738 49.354448,7.92875362 41.1567442,7.92875362 C32.9590404,7.92875362 26.3134884,14.4365738 26.3134884,22.4643768 L26.3134884,22.4643768 Z" id="路径" fill="url(#linearGradient-3)"></path>
+            <line x1="18" y1="30.5" x2="38.9223138" y2="30.5" id="路径-11" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

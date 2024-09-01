@@ -1,0 +1,172 @@
+.my-tab {
+	.list {
+		padding: 0 20px;
+		margin-left: 20px;
+		&:first-child {
+			margin-top: 20px;
+		}
+		.title {
+			margin: 10px 0 10px -20px;
+			&::before {
+				content: '';
+				width: 4px;
+				height: 12px;
+				background: #e14c46;
+				border-radius: 1px;
+				display: inline-block;
+				margin-right: 6px;
+			}
+		}
+		.base-checkbox-wrapper {
+			margin: 0;
+		}
+		.nc-checkbox {
+			display: inline-block;
+			width: 30%;
+			margin-left: 20px;
+			margin-right: 24px;
+			span {
+				white-space: nowrap;
+			}
+			margin-bottom: 8px;
+		}
+		.order-list {
+			li {
+				height: 24px;
+			}
+		}
+	}
+}
+
+.header-title-search-area {
+	align-items: center;
+	.header-title-tabs {
+		height: 46px;
+		display: flex;
+		.header-title-tab {
+			height: 46px;
+			line-height: 46px;
+			font-size: 16px;
+			margin-right: 30px;
+			color: var(--pui-black-font-color-3, #555);
+			display: inline-block;
+			cursor: pointer;
+			white-space: nowrap;
+			&.actived {
+				color: #e14c46;
+				border-bottom: 2px solid #e14c46;
+			}
+		}
+	}
+}
+.nc-bill-table-area.wrapper {
+	flex-direction: row;
+	display: flex;
+	flex: auto;
+	.header {
+		overflow: hidden;
+		white-space: nowrap;
+		padding: 0;
+		height: 40px;
+		line-height: 38px;
+		border-bottom: none;
+		> span {
+			margin-left: 30px;
+			.count {
+				color: #ff8c45;
+			}
+		}
+		.iconfont {
+			width: 30px;
+			height: 30px;
+			border-radius: 3px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 20px;
+			margin-right: 20px;
+			margin-left: auto;
+			cursor: pointer;
+			box-shadow: 0px 1px 1px 0px rgba(208, 208, 208, 0.5);
+			border: 1px solid #d0d0d0;
+			&:hover {
+				border-color: #eb5230;
+				color: #eb5230;
+			}
+		}
+		.title {
+			margin-left: 20px;
+		}
+	}
+
+	.line-box {
+		padding: 0 1px;
+		.line {
+			height: 100%;
+			width: 2px;
+			background-color: var(--pui-black-derived-color-12, #d0d0d0);
+			cursor: col-resize;
+		}
+		&:hover {
+			.line {
+				background-color: #999;
+			}
+		}
+	}
+}
+.calc-result-modal {
+	.modal-header-left {
+		align-items: center;
+	}
+	.base-modal-body {
+		display: flex;
+		.title {
+			font-size: 16px;
+			color: var(--pui-black-font-color-1, #111);
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+		.iconfont {
+			font-size: 28px;
+			color: #67c23a;
+			margin-right: 18px;
+		}
+		> div > div {
+			margin: 10px 0;
+		}
+		> div > div:first-child {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.modal-backsettle-content {
+	.search-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		.nc-date-picker {
+			width: 240px;
+		}
+		.item-name {
+			width: 140px;
+			margin-right: 8px;
+			text-align: right;
+			&.required:before {
+				content: '*';
+				color: red;
+				margin-right: 2px;
+			}
+		}
+
+		& > .refer-wrapper {
+			display: inline-block !important;
+			width: 240px;
+		}
+		& > .refer-wrapper {
+			.refer {
+				width: 100%;
+			}
+		}
+	}
+}

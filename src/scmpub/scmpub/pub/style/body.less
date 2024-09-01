@@ -1,0 +1,23 @@
+body {
+	height: 100%;
+	background: #e6e9e9;
+	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial,
+		Helvetica, sans-serif, '宋体';
+	#app {
+		height: 100%;
+		background: #fff;
+		overflow: auto;
+		& > div {
+			height: 100%;
+
+			// 固定表头，在外面加一层 div.content
+			// position: relative;
+			// .content{
+			// 	position: absolute;
+			// 	top: 60px;
+			// 	height: calc(~'100% - 60px');
+			// 	overflow: auto;
+			// }
+		}
+	}
+}

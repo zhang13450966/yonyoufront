@@ -1,0 +1,6 @@
+{
+    "report": false,
+	"dependjs": [
+        "../../../../ufoe/exports/library/lib/index.js"
+	]
+}

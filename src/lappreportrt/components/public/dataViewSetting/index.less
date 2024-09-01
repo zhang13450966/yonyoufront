@@ -1,0 +1,98 @@
+// .u-dropdown-placement-bottomLeft {
+//   box-shadow: 0 1px 5px #a5adba;
+//   border-radius: 3px;
+// }
+
+.data-view-box {
+    position: relative;
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.16) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    .menu-item {
+        box-sizing: border-box;
+        padding: 0 34px 0 28px !important;
+        min-width: 114px;
+        max-width: 214px;
+        &:hover {
+            background-color: var(--pui-black-derived-color-3,#e9f0fa) !important;
+        }
+    }
+    .data-view-item-container {
+        position: relative;
+        display: flex;
+        .data-view-cur-icon {
+            position: absolute;
+            top: 0px;
+            left: -17px;
+        }
+        .data-view-left-box {
+            // width: 100%;
+            color: #555;
+            // font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .data-view-right-box {
+            position: absolute !important;
+            top: -1px;
+            right: -26px;
+            width: 20px;
+            text-align: center;
+        }
+    }
+}
+.create-data-view {
+    width: 100%;
+    height: 42px;
+    padding-left: 26px !important;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    margin: 0 !important;
+    background-clip: inherit !important;
+    box-shadow: none !important;
+    color: #555;
+    // font-size: 14px;
+    display: flex;
+    align-items: center;
+    // background: #fff;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    cursor: pointer;
+    user-select: none;
+}
+.data-view-white {
+    background-color: #fff;
+}
+.data-view-tip-container {
+    position: absolute !important;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    // width: 92px;
+    padding: 8px 0;
+    // top: 110px;
+    // right: 80px;
+    z-index: 9999;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+    .tip-item {
+        height: 28px;
+        line-height: 28px;
+        color: #555;
+        // font-size: 14px;
+        padding: 0 8px;
+        white-space: nowrap;
+        &:hover {
+            background-color: #f3f3f3;
+        }
+    }
+}
+
+.data-view-container {
+    height: 26px;
+}

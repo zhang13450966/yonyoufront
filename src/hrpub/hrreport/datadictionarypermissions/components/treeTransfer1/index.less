@@ -1,0 +1,67 @@
+.tree-transfer {
+    clear: both;
+    height: 380px;
+    width: 100%;
+    overflow: hidden;
+    min-height: 300px;
+    border: 0;
+    padding: 0;
+    display: flex;
+    .wui-tree-node-selected {
+      color: red !important;
+    }
+
+    .transfer-left-Wrapper {
+        width: calc(~'50% - 50px');
+        padding: 0;
+        border: 1px #ccc solid;
+    }
+    .transfer-button-wrapper {
+        height: 100%;
+        width: 100px !important;
+        border-left: none;
+        border-right: none;
+        display: inline-block !important;
+        vertical-align: top;
+        text-align: center;
+        padding-top: 0;
+        margin: 0;
+
+        .button-area-warp {
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+    }
+
+        .opr-botton {
+            padding-top: 10px;
+            display: block;
+            margin: 0 auto;
+
+            button {
+            line-height: 0%;
+            width: 40px;
+            height: 40px;
+            min-width: auto;
+            padding: 0;
+            margin: 0;
+            }
+        }
+    }
+
+    .transfer-right-wrapper {
+        width: calc(~'50% - 50px');
+        padding: 0;
+        border: 1px #ccc solid;
+    }
+    .syncTreeCom{
+        height: 380px;
+    }
+    .syncTreeCom .synctree-area{
+        height: calc(~'100% - 35px');
+    }
+}
+.active{
+    background-color: #e4e4e4;
+}

@@ -1,0 +1,182 @@
+.hot-table {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+
+    #hot-display-license-info {
+        display: none;
+    }
+
+    .wtHolder {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .ht_master {
+        height: 100%;
+        z-index: 1 !important;
+
+        .wtHider{
+            overflow: hidden;
+        }
+        tbody {
+            .relative {
+                line-height: 22px;
+            }
+        }
+    }
+
+    .manualColumnResizer {
+        z-index: 99; //兼容默认查询层级NCC-207366
+    }
+
+    .ht_clone_left {
+        tbody {
+            .relative {
+                line-height: 22px;
+            }
+        }
+    }
+
+    .htCore {
+        border-collapse: collapse !important;
+        background: white;
+        margin-left: -1px;
+    }
+
+    .handsontable th {
+        background: #f9fafb;
+        color: #222222;
+        position: relative;
+        border-color: #d9d9d9;
+        background-clip: padding-box;
+    }
+
+    .handsontable td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background-repeat: no-repeat;
+        border-style: inset;
+        border-color: #d9d9d9;
+        position: relative;
+        background-clip: padding-box;
+
+        .iconfont {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        img {
+            height: 100%;
+            display: block;
+        }
+        &.drill-active {
+            color: rgb(0, 0, 238) !important;
+            cursor: pointer;
+        }
+    }
+
+    .ht_clone_top,
+    .ht_clone_left,
+    .ht_clone_top_left_corner {
+        z-index: 2 !important;
+    }
+}
+
+.hidden-textarea {
+    position: fixed;
+    height: 2px;
+    width: 2px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    opacity: 0;
+    top: 50px;
+    left: 0;
+}
+
+.position {
+    padding: 30px 16px 60px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    .label {
+        width: 100px;
+        text-align: right;
+        padding-right: 10px;
+    }
+}
+
+.simple-report-find-modal {
+    .modal-event {
+        pointer-events: auto;
+
+        .wui-modal-content {
+            height: 240px;
+        }
+    }
+
+    &.modal-no-event {
+        pointer-events: none;
+    }
+
+    .find-and-replace {
+        .far-content {
+            .area-box {
+                word-break: break-all;
+            }
+            .checkbox-wrapper {
+                margin-left: 82px;
+                padding: 6px 0;
+            }
+            .msg-content {
+                line-height: 30px;
+                color: green;
+                margin-left: 86px;
+                padding: 6px 0;
+            }
+            .msg-content-error {
+                line-height: 30px;
+                color: red;
+                margin-left: 86px;
+                padding: 6px 0;
+            }
+        }
+    }
+}
+
+.device-pixel-ratio();
+
+// -------------------------------------------------------------
+@ratio: 25, 31, 33, 38, 41, 44, 50, 58, 63, 67, 75, 80, 84, 88, 90, 94, 100, 101,
+    110, 113, 117, 120, 125, 131, 135, 138, 140, 150, 156, 158, 165, 175, 188,
+    193, 200, 219, 225, 250, 263, 300, 306, 313, 350, 375, 400, 438, 450, 500,
+    525, 600, 625, 700, 750, 875;
+
+.device-pixel-ratio(@i: length(@ratio)) when (@i > 0) {
+    @r: extract(@ratio, @i);
+    .pixel-ratio-@{r} {
+        .handsontable {
+            th {
+                border-right-width: (100px) / @r !important;
+                border-bottom-width: (100px) / @r !important;
+                border-left-width: (100px) / @r !important;
+                border-top-width: (100px) / @r !important;
+            }
+            td {
+                border-right-width: (100px) / @r;
+                border-bottom-width: (100px) / @r;
+                // border-right: (100px) / @r solid #ccc;
+                // border-bottom: (100px) / @r solid #ccc;
+            }
+        }
+    }
+    .device-pixel-ratio((@i - 1));
+}

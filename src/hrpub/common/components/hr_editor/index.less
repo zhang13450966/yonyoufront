@@ -1,0 +1,258 @@
+/**
+
+ * Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.
+
+ *
+
+ * This file provided by Facebook is for non-commercial testing and evaluation
+
+ * purposes only. Facebook reserves all rights not expressly granted.
+
+ *
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+
+ * FACEBOOK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ */
+.DraftEditor-root {
+	height: 100%;
+	.DraftEditor-editorContainer {
+		height: 100%;
+	}
+}
+.hrEditor-root {
+	// font-family: 'Georgia', serif;
+	font-size: 14px;
+	padding: 15px;
+	&.hrEditor-edit {
+		background: #fff;
+		border: 1px solid #ddd;
+	}
+	&.hrEditor-preview {
+		padding: 0;
+		background: transparent;
+		border: 0;
+		.hrEditor-editor {
+			border: 0;
+			margin-top: 0;
+			.public-DraftEditor-content {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+.hrEditor-editor {
+	border-top: 1px solid #ddd;
+	cursor: text;
+	font-size: 16px;
+	margin-top: 10px;
+
+	.public-DraftEditorPlaceholder-root,
+	.public-DraftEditor-content {
+		margin: 0 -15px -15px;
+		padding: 15px;
+	}
+	.public-DraftEditor-content {
+		min-height: 100px;
+		height: 100%;
+		overflow-y: auto;
+	}
+	.hrEditor-blockquote {
+		border-left: 5px solid #eee;
+		color: #666;
+		font-family: 'Hoefler Text', 'Georgia', serif;
+		font-style: italic;
+		margin: 16px 0;
+		padding: 10px 20px;
+	}
+	.hrEditor-code-block {
+		background-color: rgba(0, 0, 0, 0.05);
+		font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+		font-size: 16px;
+		padding: 20px;
+	}
+	.hrEditor-header-one {
+		span {
+			font-size: 36px;
+		}
+	}
+	.hrEditor-header-two {
+		span {
+			font-size: 24px;
+		}
+	}
+	.hrEditor-header-three {
+		span {
+			font-size: 18px;
+		}
+	}
+	.hrEditor-header-four {
+		span {
+			font-size: 16px;
+		}
+	}
+	.hrEditor-header-five {
+		span {
+			font-size: 14px;
+		}
+	}
+	.hrEditor-header-six {
+		span {
+			font-size: 10px;
+		}
+	}
+	.hrEditor-unordered-list-item {
+		list-style-type: disc;
+		list-style-position: unset;
+		margin-left: 40px;
+		line-height: 1.6;
+	}
+	.hrEditor-ordered-list-item {
+		list-style-type: decimal;
+		list-style-position: unset;
+		margin-left: 40px;
+		line-height: 1.6;
+	}
+}
+
+.hrEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+	display: none;
+}
+
+.hrEditor-controls {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 14px;
+	margin-bottom: 5px;
+	user-select: none;
+}
+
+.hrEditor-styleButton {
+	color: #999;
+	cursor: pointer;
+	padding: 2px 0;
+	display: inline-block;
+	width: 2em;
+	text-align: center;
+	border: 0;
+	background: transparent;
+	&[disabled] {
+		color: #d9d9d9;
+		cursor: not-allowed;
+	}
+	&.underline {
+		text-decoration: underline;
+	}
+	&.italic {
+		font-style: italic;
+	}
+	&.line-through {
+		text-decoration: line-through;
+	}
+	&.bg {
+		background-color: rgba(0, 0, 0, 0.25);
+		color: #fff;
+		padding: 2px 5px;
+	}
+	&.color- {
+		&red {
+			color: rgba(255, 0, 0, 1.0);
+		}
+		&orange {
+			color: rgba(255, 127, 0, 1.0);
+		}
+		&yellow {
+			color: rgba(180, 180, 0, 1.0);
+		}
+		&green {
+			color: rgba(0, 180, 0, 1.0);
+		}
+		&blue {
+			color: rgba(0, 0, 255, 1.0);
+		}
+		&indigo {
+			color: rgba(75, 0, 130, 1.0);
+		}
+		&violet {
+			color: rgba(127, 0, 255, 1.0);
+		}
+	}
+}
+
+.hrEditor-activeButton {
+	color: #5890ff;
+	background-color: rgba(215, 215, 215, .25);
+	&.bg {
+		color: #5890ff;
+	}
+	&.color- {
+		&red {
+			font-weight: bold;
+			background-color: rgba(215, 215, 215, .25);
+		}
+		&orange {
+			font-weight: bold;
+			background-color: rgba(215, 215, 215, .25);
+		}
+		&yellow {
+			font-weight: bold;
+			background-color: rgba(215, 215, 215, .25);
+		}
+		&green {
+			font-weight: bold;
+			background-color: rgba(215, 215, 215, .25);
+		}
+		&blue {
+			font-weight: bold;
+			background-color: rgba(215, 215, 215, .25);
+		}
+		&indigo {
+			font-weight: bold;
+			background-color: rgba(215, 215, 215, .25);
+		}
+		&violet {
+			font-weight: bold;
+			background-color: rgba(215, 215, 215, .25);
+		}
+	}
+}
+.ant-dropdown-menu-item {
+	padding: 5px;
+}
+
+.u-upload.u-upload-drag .u-upload-btn {
+	margin-top: 20px;
+}
+.add-image-url {
+	float: left;
+	.u-button {
+		float: left;
+	}
+	.u-form-control-wrapper {
+		width: 360px;
+		margin-left: 10px;
+	}
+}
+
+.hrEditor-uf-align-justify {
+	text-align: justify;
+}
+.hrEditor-uf-align-center {
+	text-align: center;
+}
+.hrEditor-uf-align-left {
+	text-align: left;
+}
+.hrEditor-uf-align-right {
+	text-align: right;
+}

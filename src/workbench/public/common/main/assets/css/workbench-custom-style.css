@@ -1,0 +1,11 @@
+/*
+    工作桌面自定义样式，如果需要修改首页或导航栏等样式可以在此css中修改覆盖原有样式
+    注意：选择器必须以#workbench开头，为了保证选择器优先级
+*/
+
+/* 示例代码 */
+/* #workbench .nc-workbench-home-container .title{ font-size: 20px; } */
+/* #workbench .nc-workbench-home-container .app-item .app-item_title { font-size: 20px; } */
+/* #workbench .nc-workbench-drawer .drawer-content .drawer-link .link-box .link-box-item{
+    color: red;
+} */

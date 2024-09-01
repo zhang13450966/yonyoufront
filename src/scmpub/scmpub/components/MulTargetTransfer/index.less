@@ -1,0 +1,167 @@
+/*
+ * @Author: huangkwf 
+ * @Date: 2018-05-28 15:22:54 
+ * @Last Modified by: wangceb
+ * @Last Modified time: 2019-07-23 15:25:41
+ */
+.m-transfer {
+	display: flex;
+	height: 100%;
+	.m-transfer-list {
+		height: 100%;
+		border: 1px solid #e9e9e9;
+		font-size: 13px;
+		.m-transfer-list-header {
+			padding: 7px 15px;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			background-color: #f3f3f3;
+			height: 33px;
+			.m-transfer-list-header-selected-count {
+				// padding-right: 10px;
+			}
+			.m-transfer-list-header-title {
+				padding-right: 10px;
+			}
+		}
+		.m-transfer-list-body {
+			height: calc(~'100% - 63px');
+			.m-transfer-list-content {
+				height: 100%;
+				padding-bottom: 5px;
+				overflow: hidden;
+				/** 滚动条样式 **/
+				&::-webkit-scrollbar {
+					/*整个滚动条区域的宽度*/
+					width: 4px;
+					height: 4px; //保证纵向滚动条和横向滚动条一致
+					margin-top: 5px;
+				}
+				&::-webkit-scrollbar-button {
+					/*滚动条上下两边的按钮*/
+					display: none;
+				}
+				&::-webkit-scrollbar-thumb {
+					/*真滚动条样式*/
+					//-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+					background: rgba(0, 0, 0, 0.54);
+					border-radius: 100px;
+				}
+				&::-webkit-scrollbar-track {
+					/*滚动条滚动的轨道*/
+					display: none;
+				}
+				&:hover {
+					overflow: auto;
+				}
+				.m-transfer-list-content-item {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.m-transfer-list-content-item {
+					padding: 7px 15px;
+					height: 32px;
+					cursor: pointer;
+					&.disabled {
+						cursor: not-allowed;
+						color: #bfbfbf;
+					}
+					&:hover:not(.disabled) {
+						background-color: #ecf6fd;
+						color: #d7332c;
+					}
+				}
+			}
+		}
+		.m-transfer-list-footer {
+			width: 100%;
+			display: flex;
+			height: 30px;
+			text-align: center;
+			border-top: 1px solid #e9e9e9;
+			.sort-move {
+				line-height: 30px;
+				flex: 1;
+				height: 29px;
+				margin: 0;
+				border-radius: 0;
+				background-color: #fff;
+				border: none;
+				&:hover {
+					background-color: #ecf6fd;
+				}
+			}
+			.sort-top {
+				border-right: 1px solid #e9e9e9;
+			}
+		}
+
+		.u-checkbox {
+			.u-checkbox-label {
+				&::before,
+				&::after {
+					top: 0;
+				}
+			}
+		}
+	}
+
+	.m-transfer-source-list,
+	.m-transfer-target-list {
+		min-width: 170px;
+		max-width: 250px;
+	}
+	.m-transfer-operation-group {
+		display: flex;
+		flex-direction: column;
+		width: 74px;
+		.m-transfer-operation {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.move-btn {
+				display: block;
+				margin: 0;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				min-width: 36px;
+				background-color: #e14c46;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0;
+				line-height: 36px;
+				.uf {
+					font-size: 16px;
+				}
+				&:disabled {
+					background-color: #f5f7fa;
+					color: #d9d9d9;
+					border: 1px solid #d9d9d9;
+				}
+			}
+			.left-move-btn {
+				margin: 20px 0;
+			}
+		}
+	}
+
+	.m-transfer-target-list {
+		display: flex;
+		flex-direction: column;
+		.m-transfer-list {
+			height: calc(~'50% - 2.5px');
+			margin-bottom: 5px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

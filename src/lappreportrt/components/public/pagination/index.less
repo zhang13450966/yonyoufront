@@ -1,0 +1,66 @@
+.pagintion {
+    height: 32px;
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    font-size: 14px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    .page-left {
+        display: flex;
+        align-items: center;
+
+        .pager-select {
+            display: flex;
+            align-items: center;
+
+            .simple-pagination-select {
+                max-width: 100px;
+                background-color: transparent;
+            }
+        }
+
+        .count {
+            line-height: 28px;
+        }
+
+        .totle {
+            display: inline-block;
+            min-width: 50px;
+            color: rgba(225, 76, 70, 1);
+            margin-left: 8px;
+        }
+
+        .ensure {
+            height: 28px;
+            padding: 0 10px;
+            text-align: center;
+            line-height: 26px;
+            cursor: pointer;
+            border: 1px solid rgba(208, 208, 208, 1);
+            font-size: 13px;
+            color: rgba(85, 85, 85, 1);
+            margin: 0 10px;
+            border-radius: 3px;
+
+            &:hover {
+                color: rgba(225, 76, 70, 1);
+                border: 1px solid rgba(225, 76, 70, 1);
+            }
+
+            &:active {
+                border: 1px solid rgba(215, 51, 44, 1);
+                color: rgba(215, 51, 44, 1);
+            }
+        }
+    }
+
+    .page-right {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}

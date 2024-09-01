@@ -1,0 +1,90 @@
+body,#app {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.wrap {
+    position: absolute;
+    /* margin-top:-42px; */
+    width:360px;
+    height:176px!important;
+    background:rgba(255,255,255,1);
+    box-shadow: 0px 1px 1px 0px rgba(74,81,93,0.1);
+    border-radius: 3px ;
+    overflow: hidden;
+}
+.titleContainer {
+    /*height: 42px;*/
+    /*line-height: 42px;*/
+    display: -webkit-box;
+}
+.title{
+    margin-top: 14px;
+    -webkit-box-flex: 1.0;
+    -webkit-box-pack: start;
+    line-height: 22px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #111111;
+    font-family:Microsoft YaHei,sans-serif;
+}
+.conLeft{
+    width:176px;
+    height: 134px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.conRight{
+    width:176px;
+    height: 134px;
+    position: absolute;
+    bottom: 0px;
+    left: 184px;
+}
+.iconL {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 123px;
+    top: 19px;
+    background: url('./myteam.png') 0 0 no-repeat #fff;
+    background-size:100% 100%; 
+}
+.iconR {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 123px;
+    top: 19px;
+    background: url('./staffmanagement.png') 0 0 no-repeat #fff;
+    background-size:100% 100%; 
+}
+.textL {
+    height:43px;
+    font-size:36px;
+    font-family:Helvetica;
+    color:rgba(68,68,68,1);
+    line-height:43px;
+    position: absolute;
+    right: 9px;
+    bottom:30px;
+}
+.textL_below {
+    height:19px;
+    font-size:14px;
+    font-family:MicrosoftYaHei;
+    color:rgba(136,136,136,1);
+    line-height:19px;
+    position: absolute;
+    right: 9px;
+    bottom: 7px;
+}
+.svg {
+    width: 16px;
+    height: 19px;
+    cursor: pointer;
+    opacity: 0.4;
+    position: absolute;
+    left: 9px;
+    bottom: 5px;
+}

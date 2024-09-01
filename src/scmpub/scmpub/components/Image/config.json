@@ -1,0 +1,6 @@
+{
+	"output": "scmpub/scmpub/components/Image",
+	"hash": false,
+	"dependModuleName": [ "sscrp/rppub/components/image" ],
+	"dependjs": [ "../../../../sscrp/rppub/components/image/index.js" ]
+}

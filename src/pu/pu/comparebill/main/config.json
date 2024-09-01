@@ -1,0 +1,12 @@
+{
+	"dependModuleName": [
+		"uap/common/components/NCUploader",
+		"scmpub/scmpub/components/ResumeModal",
+		"scmpub/scmpub/components/BillCodeStyle"
+	],
+	"dependjs": [
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../scmpub/scmpub/components/ResumeModal/index.js",
+		"../../../../scmpub/scmpub/components/BillCodeStyle/index.js"
+	]
+}

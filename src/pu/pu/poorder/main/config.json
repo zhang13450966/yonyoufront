@@ -1,0 +1,36 @@
+{
+	"dependModuleName": [
+		"epmp/exports/components/Inspection",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/NCUploader",
+		"uap/common/components/approvalTrans",
+		"uap/common/components/scanCodeView",
+		"scmpub/scmpub/components/MergePrinting",
+		"scmpub/scmpub/components/TransportStatus",
+		"scmpub/scmpub/components/TempSave",
+		"scmpub/scmpub/components/BillCodeStyle",
+		"scmpub/scmpub/components/ResumeModal",
+		"uap/common/components/printOnClient",
+		"to/to/businessinfo/list",
+		"uap/common/components/printlimitModal",
+		"uap/common/components/ExcelOutput",
+		"uap/common/components/excelImportconfig"
+	],
+	"dependjs": [
+		"../../../../epmp/exports/components/Inspection/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../uap/common/components/approvalTrans/index.js",
+		"../../../../uap/common/components/scanCodeView/index.js",
+		"../../../../uap/common/components/printOnClient/index.js",
+		"../../../../scmpub/scmpub/components/MergePrinting/index.js",
+		"../../../../scmpub/scmpub/components/TransportStatus/index.js",
+		"../../../../scmpub/scmpub/components/TempSave/index.js",
+		"../../../../scmpub/scmpub/components/BillCodeStyle/index.js",
+		"../../../../scmpub/scmpub/components/ResumeModal/index.js",
+		"../../../../to/to/businessinfo/list/index.js",
+		"../../../../uap/common/components/ExcelOutput/index.js",
+		"../../../../uap/common/components/excelImportconfig/index.js",
+		"../../../../uap/common/components/printlimitModal/index.js"
+	]
+}

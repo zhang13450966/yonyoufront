@@ -1,0 +1,225 @@
+/*
+ * @Author: huangkwf 
+ * @Date: 2018-05-28 15:22:54 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-09-18 21:05:18
+ */
+// 颜色变量
+@AOusertransfer-bgc: #fff;
+@AOusertransfer-c-list-header: #474d54;
+@AOusertransfer-c-icon: #757f8c;
+@AOusertransfer-bgc-list-content-item-hover: #ecf6fd;
+@AOusertransfer-c-close-item-before: #000912;
+@AOusertransfer-bgc-list-content-item-span: #474d54;
+@AOusertransfer-bc-list-footer: #e9e9e9;
+@AOusertransfer-bgc-sort-move: #fff;
+@AOusertransfer-bgc-sort-move-hover: #ecf6fd;
+@AOusertransfer-bc-sort-top: #e9e9e9;
+@AOusertransfer-bc-source-list: #d9d9d9;
+@AOusertransfer-bgc-move-btn: #ecf2f9;
+@AOusertransfer-c-move-btn: #000912;
+@AOusertransfer-bgc-list-tab: #f4f5f7;
+@AOusertransfer-c-list-tab-list: #474d54;
+@AOusertransfer-c-list-tab-active: #000912;
+@AOusertransfer-bgc-list-tab-after: #ff0000;
+
+.user-transfer {
+    // background: @AOusertransfer-bgc;
+    display: flex;
+    height: 100%;
+    padding-left: 20px;
+    position: relative;
+    .user-transfer-list {
+        height: 100%;
+        font-size: 12px;
+        position: relative;
+        padding-top: 15px;
+        .user-transfer-list-header {
+            color: @AOusertransfer-c-list-header;
+            .icon {
+                color: @AOusertransfer-c-icon;
+            }
+            .user-transfer-list-header-title {
+                display: inline-block;
+                margin-left: 10px;
+                font-size: 14px;
+                color: @AOusertransfer-c-list-header;
+            }
+        }
+        .hide-list {
+            display: none;
+        }
+        .user-transfer-list-body {
+            border-top: none;
+            height: 100%;
+            margin-top: 10px;
+            .user-transfer-list-content {
+                height: 100%;
+                overflow: hidden;
+                &:hover {
+                    overflow: auto;
+                }
+                .user-transfer-list-content-item {
+                    height: 30px;
+                    padding: 5px 0;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: @AOusertransfer-bgc-list-content-item-hover;
+                    }
+                    .close-item {
+                        display: inline-block;
+                        float: right;
+                        padding-right: 40px;
+                        &::before {
+                            color: @AOusertransfer-c-close-item-before;
+                            font-size: 12px;
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                        color: @AOusertransfer-bgc-list-content-item-span;
+                    }
+                }
+            }
+        }
+        .user-transfer-list-footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            height: 30px;
+            text-align: center;
+            border-top: 1px solid @AOusertransfer-bc-list-footer;
+            .sort-move {
+                line-height: 30px;
+                flex: 1;
+                height: 29px;
+                margin: 0;
+                border-radius: 0;
+                background-color: @AOusertransfer-bgc-sort-move;
+                &:hover {
+                    background-color: @AOusertransfer-bgc-sort-move-hover;
+                }
+            }
+            .sort-top {
+                border-right: 1px solid @AOusertransfer-bc-sort-top;
+            }
+        }
+
+        .u-checkbox {
+            .u-checkbox-label {
+                &::before,
+                &::after {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .user-transfer-source-list {
+        min-width: 200px;
+        max-width: 300px;
+        border-right: 1px solid @AOusertransfer-bc-source-list;
+        padding-top: 10px;
+        .base-form-control-wrapper{
+            padding: 0 16px;
+            text-align: center;
+            .source-search {
+                padding-right: 8px;
+            }
+        }
+        .u-form-control-suffix {
+            right: 17px;
+            .uf-search {
+                padding-right: 15px;
+            }
+        }
+        .user-transfer-list {
+            .user-transfer-list-body {
+                margin-top: 0;
+                padding-left: 20px;
+                max-height: 420px;
+            }
+        }
+    }
+
+    .user-transfer-operation-group {
+        // position: absolute;
+        // top: 150px;
+        // left: 150px;
+        // display: flex;
+        // flex-direction: column;
+        .user-transfer-operation {
+            // margin-bottom:30px;
+            width: 100px;
+            // height: 50%;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            .move-btn {
+                display: block;
+                min-width: 60px;
+                height: 28px;
+                line-height: 28px;
+                background: @AOusertransfer-bgc-move-btn;
+                border-radius: 3px;
+                color: @AOusertransfer-c-move-btn;
+                font-size: 12px;
+                span {
+                    &:before {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .user-transfer-target-list {
+        width: 100%;
+        height: 100%;
+        .list-tab {
+            height: 40px;
+            background: @AOusertransfer-bgc-list-tab;
+            line-height: 40px;
+            .list {
+                display: inline-block;
+                margin-right: 10px;
+                cursor: pointer;
+                width: 40%;
+                padding-left: 30px;
+                font-size: 13px;
+                color: @AOusertransfer-c-list-tab-list;
+                .info {
+                    font-size: 8px;
+                }
+            }
+            .active {
+                position: relative;
+                color: @AOusertransfer-c-list-tab-active;
+                font-weight: 600;
+                &:after {
+                    display: inline-block;
+                    content: "";
+                    width: 60px;
+                    height: 3px;
+                    background: @AOusertransfer-bgc-list-tab-after;
+                    position: absolute;
+                    top: 90%;
+                    left: 30px;
+                }
+            }
+        }
+        .user-transfer-list {
+            height: 100%;
+            margin-bottom: 5px;
+            padding-left: 30px;
+            .user-transfer-list-body {
+                max-height: 435px;
+            }
+        }
+        .hide-list {
+            display: none;
+        }
+    }
+}

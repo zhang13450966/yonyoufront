@@ -1,0 +1,115 @@
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrap {
+    > .main {
+        height: 46px;
+        z-index: 1;
+        width: 100%;
+        padding: 0px 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        // border-bottom: 1px solid #d9d9d9;
+        // background-color: #f6f6f6;
+        // border-radius: 3px 3px 0 0;
+    
+        .flex;
+        justify-content: flex-start;
+        
+        
+        & > .comp-group {
+            .flex;
+            & > * {
+                margin-left: 10px;
+            }
+        }
+        
+        & > * {
+        }
+        
+        .search-area-contant {
+            min-width: auto;
+        }
+        
+        h2.title {
+            font-size: 17px;
+            // line-height: 32px;
+            margin-right: 30px;
+            color: #111;
+        }
+        
+        .btn-group {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            justify-content: space-between;
+
+            & > * {
+                margin-left: 5px;
+                &:first-child {
+                    margin-left: 10px;
+                }
+            }
+
+            .NC_CreateSearch .lightapp-component-search .clearBtn {
+                padding: 0 16px;
+                box-shadow: none;
+            }
+        }
+    }
+
+    & > .senior {
+        background: #f3f3f3;
+        border-radius: 3px;
+        margin: 10px 0 0;
+        padding: 10px 0;
+        .comp-senior-group {
+            .flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            
+            .comp-item {
+                .flex;
+                justify-content: flex-start;
+
+                // padding: 10px 30px;
+                padding: 10px;
+                .name {
+                    margin-right: 10px;
+                    min-width: 70px;
+                    text-align: right;
+                }
+                
+                .tip {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .btn-senior-group {
+            .flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .separator {
+            display: inline-block;
+            width: 10px;
+            border: 1px solid #d8d8d8;
+            margin: 0 10px;
+        }
+
+        .duration {
+            .flex;
+        }
+    }
+}

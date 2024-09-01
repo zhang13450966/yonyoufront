@@ -1,0 +1,66 @@
+@import './variable.less';
+.u-checkbox,
+.u-tree-checkbox {
+	height: 14px!important;
+	line-height: 14px;
+	border-radius: 2px;
+	input {
+		width: 14px;
+		height: 14px;
+	}
+	&-label {
+		color: #333;
+		&:before,
+		&:after {
+			width: 14px!important;
+			height: 14px!important;
+			line-height: 14px!important;
+		}
+		&::before {
+			border-radius: 2px!important;
+			border: 1px solid #d9d9d9!important;
+			background-color: #fff;
+			transition: all .3s ease-in-out;
+		}
+	}
+}
+
+.u-checkbox {
+	// 复选框修复点击位置偏差
+	input[type=checkbox] {
+		top: -3px !important;
+		left: -2px !important;
+	}
+	&.is-checked,&.u-checkbox-indeterminate {
+		.u-checkbox-label{
+			&::before {
+				box-shadow: @color-primary 0px 0px 0px 10px inset !important;
+				border-color: @color-primary!important;
+			}
+			&::after {
+				color: @color-white;
+				content: "\e658";
+				line-height: 14px;
+				font-size: 12px!important;
+			}
+		}
+	}
+}
+
+.u-tree-checkbox{
+	.u-tree-checkbox-inner{
+		border-radius: 2px!important;
+		&::after {
+			color: @color-white;
+		}
+	}
+	&-checked,&-indeterminate{
+		.u-tree-checkbox-inner{
+			background-color: @color-primary!important;
+			border-color: @color-primary!important;
+			&::after {
+				color: @color-white;
+			}
+		}
+	}
+}

@@ -1,0 +1,450 @@
+//打印设置模态框
+.report-plugin-print-setting {
+    .print-modal-body {
+        // border-bottom: 1px solid #dbdbdb;
+        box-shadow: 0 1px 0 0 rgb(74 81 93 / 10%);
+        padding: 0;
+    }
+
+    .plugin-print-setting {
+        flex: 1;
+        label,
+    //打印设置
+    .plugin-print-setting-content {
+            // overflow: hidden;
+            .print-setting {
+                float: left;
+                .print-setting-header {
+                    border-bottom: 1px solid rgb(245, 218, 218);
+                    height: 34px;
+                    line-height: 34px;
+                    font-size: 13px;
+                    font-family: PingFangHK-Medium, PingFangHK;
+                    font-weight: 500;
+                    color: rgba(17, 17, 17, 1);
+                    background: rgba(236, 239, 245, 1);
+                    &.common-setting-header {
+                        padding-left: 38px;
+                        border-right: 1px solid rgba(208, 208, 208, 0.3);
+                    }
+                    &.page-setting-header {
+                        padding-left: 22px;
+                    }
+                }
+                .print-setting-content {
+                    //padding: 10px 10px;
+                    .setting-item {
+                        .title {
+                            font-size: 13px;
+                            font-family: PingFangHK-Regular, PingFangHK;
+                            font-weight: 400;
+                            color: rgba(17, 17, 17, 1);
+                            display: flex;
+                            align-items: center;
+                            .point {
+                                display: inline-block;
+                                width: 6px;
+                                height: 6px;
+                                background: #d9d9d9;
+                                border-radius: 3px;
+                                margin-right: 5px;
+                            }
+                            .line-wrap {
+                                flex: 1 1 auto;
+                                margin-left: 10px;
+                                .line {
+                                    border-bottom: 1px dashed #d0d0d0;
+                                    display: flex;
+                                }
+                            }
+                        }
+                        .item-wrapper.single {
+                            display: flex;
+                            .icon-quanbuyingyong {
+                                color: rgba(0, 0, 0, 1);
+                                opacity: 0.2;
+                                font-size: 14px;
+                                margin-left: 8px;
+                            }
+                            // .u-radio-group {
+                            //     width: 100%;
+
+                            //     .u-radio {
+                            //         display: inline-block;
+                            //         width: 50%;
+                            //         // .u-radio-label:before{
+                            //         //     bottom:2px;
+                            //         // }
+                            //     }
+                            // }
+
+                            // .radio-group-hotkey-wrapper {
+                            //     height: 60px;
+                            //     line-height: 60px;
+                            // }
+                            .print-radio-group {
+                                display: inline-block;
+                                height: 60px;
+                                line-height: 60px;
+                            }
+                            .print-checkbox {
+                                display: inline-block !important;
+                                width: 50%;
+                                height: 64px;
+                                line-height: 64px;
+                            }
+                        }
+                        .item-wrapper {
+                            padding: 8px 8px 8px 10px;
+                            // .u-form-control-wrapper {
+                            //     .u-form-control {
+                            //         text-align: left !important;
+                            //     }
+                            // }
+                            .item.edge {
+                                .uf-arrow-up::before {
+                                    color: #555;
+                                }
+                                .uf-arrow-down::before {
+                                    color: #555;
+                                }
+                            }
+                            .item {
+                                margin-bottom: 12px;
+                                label {
+                                    margin-right: 10px;
+                                    font-size: 13px;
+                                    font-family: PingFangHK-Regular, PingFangHK;
+                                    font-weight: 400;
+                                    // color: rgba(85, 85, 85, 1);
+                                }
+                                .control {
+                                    &.main-area-sel {
+                                        margin-left: 13px;
+                                    }
+                                    .area-start {
+                                        margin-right: 5px;
+                                    }
+                                    .area-end {
+                                        margin-left: 10px;
+                                        margin-right: 5px;
+                                    }
+                                }
+
+                                //页边距设置
+                                .page-margin {
+                                    height: 32px;
+                                    label {
+                                        vertical-align: top;
+                                        height: 25px;
+                                        display: inline-block;
+                                        line-height: 25px;
+                                    }
+                                    .page-margin-input {
+                                        width: 50px;
+                                        height: 25px;
+                                        input {
+                                            padding: 0 0;
+                                            height: 24px;
+                                            width: 35px;
+                                            text-align: center;
+                                        }
+                                        // .u-input-group-btn {
+                                        //     width: 12px;
+                                        //     min-width: 12px;
+                                        //     .icon-group {
+                                        //         width: 12px;
+                                        //         height: 24px;
+                                        //         .uf {
+                                        //             line-height: 12px;
+                                        //         }
+                                        //     }
+                                        // }
+                                    }
+
+                                    &.center {
+                                        display: flex;
+                                        justify-content: space-between;
+                                    }
+                                    &.top,
+                                    &.bottom {
+                                        text-align: center;
+                                    }
+                                }
+
+                                .page-margin-item {
+                                    display: flex;
+                                }
+                                .page-margin-top,
+                                .page-margin-bottom {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                            }
+                            //打印区域设置
+                            .row-sel,
+                            .col-sel {
+                                input {
+                                    height: 24px;
+                                }
+                                div {
+                                    display: inline !important;
+                                }
+                                .print-form-wrapper {
+                                    width: 90px;
+                                }
+                            }
+                            .row-sel {
+                                .control {
+                                    margin-left: 9px;
+                                }
+                            }
+                            .col-sel {
+                                input {
+                                    height: 24px;
+                                }
+                                .control {
+                                    margin-left: 3px;
+                                }
+                            }
+
+                            //打印标题设置
+                            .unit-sel {
+                                div {
+                                    display: inline !important;
+                                }
+                                .print-form-wrapper {
+                                    width: 90px;
+                                }
+                            }
+                            .scale {
+                                div {
+                                    display: inline-block;
+                                }
+                            }
+
+                            //调整齐布局使用
+                            .row-col-set {
+                                padding-left: 57px;
+                                padding-bottom: 4px;
+                                .row-sel {
+                                    margin-bottom: 17px;
+                                    div {
+                                        display: inline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .page-setting-item {
+                        .scale {
+                            .print-form-wrapper {
+                                width: 90px;
+                            }
+                            .scale-range {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    .page-size-setting {
+                        .formcontrol-hotkey-wrapper {
+                            display: inline!important;
+                            .md {
+                                width: 80px;
+                            }
+                        }
+                        .paper-item-placeholder {
+                            height: 26px;
+                        }
+                        .height {
+                            margin-left: 18px;
+                        }
+                    }
+                    .page-type-setting {
+                        // .u-select-selection-selected-value {
+                        //     width: 100%;
+                        // }
+                        .print-choose-paper-select {
+                            width: 180px;
+                        }
+                    }
+                    .page-direction-setting {
+                        .control {
+                            div:first-child {
+                                display: inline-block;
+                            }
+                        }
+                        margin-bottom: 12px !important;
+                    }
+                    .print-area-setting {
+                        //margin-top: 8px;
+                    }
+
+                    .print-title-setting {
+                        margin-top: 24px;
+                    }
+
+                    &.common-setting-content {
+                        padding: 10px 12px 10px 25px;
+                    }
+                    &.page-setting-content {
+                        padding: 10px 20px 10px 12px;
+                    }
+                }
+            }
+            .common-print-setting {
+                width: 47%;
+            }
+            .page-print-setting {
+                width: 53%;
+            }
+        }
+
+        //页眉页脚预览
+        .plugin-print-setting-footer {
+            .title {
+                height: 34px;
+                line-height: 34px;
+                padding-left: 38px;
+                background: rgba(236, 239, 245, 1);
+                font-size: 13px;
+                font-family: PingFangHK-Medium, PingFangHK;
+                font-weight: 500;
+            }
+            .preview {
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                border: 1px solid rgba(241, 241, 241, 1);
+                border-radius: 3px;
+                //height: 50px;
+                margin: 8px 37px 16px 39px;
+                line-height: 1;
+                .pre-item {
+                    //border: 1px solid #ccc;
+                    //height: 100%;
+                    width: 33%;
+                    min-height: 60px;
+                    max-height: 400px;
+                    overflow: auto;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .print-modal-footer {
+        .plugin-print-setting-headerFooter-btn {
+            float: left;
+        }
+    }
+}
+.print-setting-button {
+    float: left;
+}
+
+.plugin-print-setting-wrapper {
+    height: 100%;
+    display: flex;
+    .plan-area {
+        // height: 543px;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #d0d0d0;
+        width: 200px;
+        .print-setting-header {
+            border-bottom: 1px solid rgb(245, 218, 218);
+            height: 34px;
+            line-height: 34px;
+            font-size: 13px;
+            font-family: PingFangHK-Medium, PingFangHK;
+            font-weight: 500;
+            color: rgba(17, 17, 17, 1);
+            background: rgba(236, 239, 245, 1);
+            &.common-setting-header {
+                padding-left: 38px;
+            }
+            &.page-setting-header {
+                padding-left: 22px;
+            }
+        }
+        .plan-container {
+            flex: 1;
+            overflow: auto;
+            .item {
+                display: flex;
+                justify-content: space-between;
+                height: 34px;
+                line-height: 34px;
+                padding-left: 15px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #e4e4e4;
+                    color: #e14c46;
+                    .icon-box {
+                        display: block;
+                        i {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+                .icon-box {
+                    display: none;
+                    padding-right: 15px;
+                }
+                .title {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .active {
+                background-color: #e4e4e4;
+                color: #e14c46;
+            }
+        }
+    }
+}
+
+.report-code-name-modal {
+    .print-modal-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .code-name-container {
+        .item {
+            display: flex;
+            justify-content: center;
+            i {
+                line-height: 34px;
+                color: #e14b46;
+            }
+            span {
+                line-height: 30px;
+                flex-basis: 80px;
+            }
+            div {
+                width: 250px;
+            }
+        }
+
+        .multi-lang-suffix {
+            flex-basis: inherit !important;
+        }
+        .error {
+            div {
+                .multi-lang-text {
+                    border-color: #e14b46;
+                }
+            }
+        }
+    }
+}
+.page-type-option {
+    display: flex;
+    justify-content: space-between;
+    i {
+        color: #aaaaaa;
+    }
+}

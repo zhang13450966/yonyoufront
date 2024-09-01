@@ -1,0 +1,62 @@
+// 边框的基本配置
+
+@border:1px solid @border-color;
+
+.tree-card {
+	height: calc(~'100% - 50px');
+	display: flex;
+	.tree-area {
+		background: @color-white;
+		padding: 20px;
+		min-width: 25%;
+		height: 100%;
+		border-right: @border;
+		overflow: hidden;
+		&:hover {
+			overflow: auto;
+		}
+	}
+	.card-area {
+		margin-left: auto;
+		margin-right: 0;
+		padding: 20px;
+		max-width: 75%;
+		height: 100%;
+		background: @color-white;
+		overflow: hidden;
+		&:hover {
+			overflow: auto;
+		}
+	}
+}
+
+.tree-table {
+	height: calc(~'100% - 50px');
+	display: flex;
+	.tree-area {
+		background: @color-white;
+		padding: 20px;
+		min-width: 25%;
+		height: 100%;
+		border-right: @border;
+		overflow: hidden;
+		&:hover {
+			overflow: auto;
+		}
+	}
+	.table-area {
+		margin-left: auto;
+		margin-right: 0;
+		padding: 20px;
+		max-width: 75%;
+		height: 100%;
+		background: @color-white;
+		overflow: hidden;
+		&:hover {
+			overflow: auto;
+		}
+	}
+}
+
+.tree-card-table {
+}

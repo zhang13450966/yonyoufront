@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title> Application </title>
+  <%= configcss %>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="../../../../platform/resource/polyfill.js"></script>
+  <script src="../../../../platform/library/index.js"></script>
+  <script src="../../../../platform/resource/ca/ca0.js"></script>
+  <script src="../../../../platform/resource/ca/ca1.js"></script>
+  <script src="../../../../platform/resource/ca/ca2.js"></script>
+  <script src="../../../../platform/resource/ca/nccsign.js"></script>
+  <script src="../../../../platform/resource/ca/sha256.js"></script>
+  <script src="../../../../platform/api/index.js"></script>
+  <%= configjs %>
+</body>

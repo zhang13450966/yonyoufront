@@ -1,0 +1,15 @@
+{
+    "report": true,
+    "dependModuleName": [
+        "uap/common/components/NCUploader",
+        "uap/common/components/approvalTrans",
+        "uap/common/components/ApproveDetail",
+        "uap/common/components/Viewer"
+	],
+	"dependjs": [
+        "../../../../uap/common/components/NCUploader/index.js",
+        "../../../../uap/common/components/approvalTrans/index.js",
+        "../../../../uap/common/components/ApproveDetail/index.js",
+        "../../../../uap/common/components/Viewer/index.js"
+	]
+}

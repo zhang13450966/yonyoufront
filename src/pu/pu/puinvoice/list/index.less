@@ -1,0 +1,84 @@
+// @import '../../../../scmpub/scmpub/pub/style/common.less';
+
+.show-bill-track {
+	display: block;
+	// height:auto;
+	width: 990px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.hide-bill-track {
+	visibility: hidden;
+	//display: none;
+	height: 0;
+}
+.bill-track-invoice {
+	//background: #fff;
+	box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 202;
+	// max-width:800px;
+	// max-height:760px;
+	width: 990px;
+	height: 628px;
+	.slideToShowMore {
+		position: relative;
+		display: block;
+		bottom: 0px;
+		left: 455px;
+		font-size: 13px;
+		font-family: MicrosoftYaHei;
+		color: rgba(85, 85, 85, 1);
+		line-height: 28px;
+		cursor: pointer;
+	}
+	.BillTraskTable {
+	}
+	.title {
+		//background: #fff;
+		cursor: pointer;
+		height: 40px;
+		line-height: 22px;
+		border-bottom: 1px solid #d9d9d9;
+		padding: 10px 20px;
+		position: relative;
+		.close-icon {
+			position: absolute;
+			right: 20px;
+			top: 15px;
+			font-size: 13px;
+		}
+		.toShowTrackBillTable {
+			margin-left: 25px;
+			height: 20px;
+			.toShowTrackBillTableText,
+			.toShowTrackBillTableCheckBox {
+				line-height: 20px;
+			}
+			.toShowTrackBillTableCheckBox {
+				margin-right: 4px;
+				height: 14px;
+				width: 14px;
+				line-height: 16px;
+			}
+		}
+	}
+}
+
+.bill-track-shade {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 201;
+	opacity: 1;
+	background-color: #000;
+	opacity: 0.6;
+	overflow-x: hidden;
+	overflow-y: auto;
+}

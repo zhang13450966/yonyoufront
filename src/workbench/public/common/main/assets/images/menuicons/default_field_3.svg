@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>随机循环5</title>
+    <defs>
+        <linearGradient x1="50%" y1="-3.03576608e-14%" x2="50%" y2="97.0412796%" id="linearGradient-1">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-3.03576608e-14%" x2="50%" y2="97.0412796%" id="linearGradient-2">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="随机循环5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -0.000000)">
+        <g id="编组-9" transform="translate(8.000000, 9.000000)">
+            <path d="M51,-3.55271368e-15 C53.209139,-3.95852593e-15 55,1.790861 55,4 L55,50 C55,52.209139 53.209139,54 51,54 L8,54 L8,4 C8,1.790861 9.790861,-3.14690143e-15 12,-3.55271368e-15 L51,-3.55271368e-15 Z M36.5,35 L19.5,35 C18.6715729,35 18,35.6715729 18,36.5 C18,37.3284271 18.6715729,38 19.5,38 L19.5,38 L36.5,38 C37.3284271,38 38,37.3284271 38,36.5 C38,35.6715729 37.3284271,35 36.5,35 L36.5,35 Z M31.5,26 L19.5,26 C18.6715729,26 18,26.6715729 18,27.5 C18,28.3284271 18.6715729,29 19.5,29 L19.5,29 L31.5,29 C32.3284271,29 33,28.3284271 33,27.5 C33,26.6715729 32.3284271,26 31.5,26 L31.5,26 Z M44.5,17 L19.5,17 C18.6715729,17 18,17.6715729 18,18.5 C18,19.3284271 18.6715729,20 19.5,20 L19.5,20 L44.5,20 C45.3284271,20 46,19.3284271 46,18.5 C46,17.6715729 45.3284271,17 44.5,17 L44.5,17 Z" id="形状结合" fill="url(#linearGradient-1)"></path>
+            <path d="M4,23 L6,23 L6,23 L6,54 L4,54 C1.790861,54 2.705415e-16,52.209139 0,50 L0,27 C-2.705415e-16,24.790861 1.790861,23 4,23 Z" id="矩形备份-20" fill="url(#linearGradient-2)" opacity="0.8"></path>
+        </g>
+    </g>
+</svg>

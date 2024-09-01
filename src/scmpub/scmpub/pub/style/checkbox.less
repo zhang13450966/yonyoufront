@@ -1,0 +1,92 @@
+/*
+ * @Author: hufei 
+ * @PageInfo: 复选框的公共样式
+ * @Date: 2018-04-17 15:28:55 
+ * @Last Modified by: hufei
+ * @Last Modified time: 2018-04-27 11:05:08
+ */
+
+@import './variable.less';
+.u-checkbox {
+	border-radius: 2px;
+	input {
+		width: 16px;
+		height: 16px;
+	}
+	// 复选框修复点击位置偏差
+	input[type=checkbox] {
+		top: -3px !important;
+		left: -2px !important;
+	}
+	&-label {
+		color: #333;
+		&:before,
+		&:after {
+			width: 16px !important;
+			height: 16px !important;
+			line-height: 16px !important;
+		}
+		&::before {
+			border-radius: 2px !important;
+			border: 1px solid #d9d9d9 !important;
+			background-color: #fff;
+			transition: all .1s ease-in-out !important;
+		}
+	}
+
+	&.is-checked,
+	&.u-checkbox-indeterminate {
+		.u-checkbox-label {
+			&::before {
+				box-shadow: @color-primary 0px 0px 0px 10px inset !important;
+				border-color: @color-primary!important;
+			}
+			&::after {
+				color: @color-white;
+				line-height: 16px;
+				font-size: 12px !important;
+			}
+		}
+	}
+}
+
+
+// 树上的复选框
+.u-tree-checkbox {
+	.u-tree-checkbox-inner {
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		border-radius: 2px !important;
+		&::after {
+			width: 6px;
+			height: 10px;
+			color: @color-white;
+		}
+	}
+	&.u-tree-checkbox-checked{
+		.u-tree-checkbox-inner {
+			background-color: @color-primary!important;
+			border-color: @color-primary!important;
+			&::after {
+				width: 6px;
+				height: 10px;
+				color: @color-white;
+			}
+		}
+	}
+	&.u-tree-checkbox-indeterminate{
+		.u-tree-checkbox-inner {
+			background-color: @color-primary!important;
+			border-color: @color-primary!important;
+			&::after {
+				width: 10px;
+				height: 1px;
+				top: 6px;
+				color: @color-white;
+			}
+		}
+	}
+	
+	
+}

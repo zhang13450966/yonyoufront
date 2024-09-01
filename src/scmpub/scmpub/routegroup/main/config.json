@@ -1,0 +1,4 @@
+{
+	"dependModuleName": [ "uap/common/components/NCUploader" ],
+	"dependjs": [ "../../../../uap/common/components/NCUploader/index.js" ]
+}

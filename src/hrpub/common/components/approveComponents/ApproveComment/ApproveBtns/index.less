@@ -1,0 +1,301 @@
+//  颜色变量
+@commentapprovebtns-c-bohui_sign: #7cc6f9;
+@commentapprovebtns-c-yujing_sign: #f78c66;
+@commentapprovebtns-c-button-second: #555;
+@commentapprovebtns-bgc-button-second: #e4e4e4;
+@commentapprovebtns-bgc-reject-list: #fff;
+@commentapprovebtns-bc-reject-list: #d0d0d0;
+@commentapprovebtns-c-reject-list-after: #555;
+@commentapprovebtns-bgc-reject-detail: #fff;
+@commentapprovebtns-bsc-reject-detail: rgba(0, 0, 0, 0.2);
+@commentapprovebtns-bc-info-contain: #d0d0d0;
+@commentapprovebtns-bc-title: #e9e9e9;
+@commentapprovebtns-bgc-title: #f3f3f3;
+@commentapprovebtns-c-title-close-after: #757f8c;
+@commentapprovebtns-c-title-name: #474d54;
+@commentapprovebtns-bgc-title-name-before: #666;
+@commentapprovebtns-bgc-reject-detail-shade: #000;
+@commentapprovebtns-c-reject-menu: #474d54;
+@commentapprovebtns-c-rejectMode: rgba(0, 0, 0, 0.65);
+@commentapprovebtns-c-bangzhutishi: #d7332c;
+
+.approve-btns {
+    display: inline-block;
+    .btns {
+        // .icon-yujing, .icon-xiaoxi{
+        //     color: #d7332c;
+        //     display: inline-block;
+        //     height: 30px;
+        //     width: 30px;
+        //     vertical-align: middle;
+        //     margin-left: 5px;
+        //     border-radius: 4px;
+        //     background: #e0e0e0;
+        //     line-height: 30px;
+        //     text-align: center;
+        // }
+        .yujing_sign,
+        .bohui_sign {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .bohui_sign {
+            color: @commentapprovebtns-c-bohui_sign;
+            border: 1px solid @commentapprovebtns-c-bohui_sign;
+        }
+        .yujing_sign {
+            color: @commentapprovebtns-c-yujing_sign;
+            border: 1px solid @commentapprovebtns-c-yujing_sign;
+        }
+        .user-refer {
+            display: inline-block;
+            .refer-wrapper {
+                display: inline !important;
+            }
+        }
+        .button-second {
+            background: @commentapprovebtns-bgc-button-second;
+            color: @commentapprovebtns-c-button-second;
+        }
+        .reject-btns {
+            margin-left: 0px;
+            display: inline-block;
+            //border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            .reject-btn {
+                margin-left: 0;
+                min-width: 50px;
+                height: 30px;
+                padding-right: 5px;
+                border-radius: 3px 0px 0px 3px;
+            }
+            .reject-list {
+                display: inline-block;
+                vertical-align: top;
+                width: 20px;
+                border: 1px solid @commentapprovebtns-bc-reject-list;
+                margin-left: 0;
+                padding: 0;
+                min-width: 0;
+                position: relative;
+                background: @commentapprovebtns-bgc-reject-list;
+                border-radius: 0px 3px 3px 0px;
+                height: 30px;
+                cursor: pointer;
+                // &:hover {
+                //     color: #e14c46!important;
+                //     border-color: #e14c46!important;
+                // }
+                &:before {
+                    position: absolute;
+                    top: 10px;
+                    right: 3px;
+                    // color: @commentapprovebtns-c-reject-list-after;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .reject-detail {
+        box-shadow: 0px 2px 8px 0px @commentapprovebtns-bsc-reject-detail;
+        border-radius: 2px;
+        background: @commentapprovebtns-bgc-reject-detail;
+        z-index: 500;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        .u-tabs-bar{
+            background-color: @commentapprovebtns-bgc-title !important;
+        }
+        .flow-list-info-contain {
+            margin: 6px auto;
+            width: 99%;
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid @commentapprovebtns-bc-info-contain;
+        }
+
+        &.hide-reject-detail {
+            visibility: hidden;
+        }
+        &.show-reject-detail {
+            display: block;
+        }
+        .title {
+            padding: 0 10px;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            background-color: @commentapprovebtns-bgc-title;
+            border-bottom: 1px solid @commentapprovebtns-bc-title;
+            .close {
+                float: right;
+                cursor: pointer;
+                &:before {
+                    color: @commentapprovebtns-c-title-close-after;
+                    font-size: 14px;
+                }
+            }
+            .name {
+                padding-right: 6px;
+                float: left;
+                color: @commentapprovebtns-c-title-name;
+                font-size: 14px;
+                font-weight: 600;
+                position: relative;
+                &::before {
+                    display: block;
+                    content: " ";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    height: 13px;
+                    width: 2px;
+                    background-color: @commentapprovebtns-bgc-title-name-before;
+                }
+            }
+        }
+        .detail {
+            max-width: 800px;
+            .img {
+                text-align: center;
+            }
+            .hide-detail-img {
+                display: none;
+            }
+            .detail-btn {
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                z-index: 1;
+            }
+            .reject-dagre.dagre-area {
+                width: 100%;
+                .dagre-extract {
+                    position: absolute;
+                    display: none;
+                    top: 15px;
+                    right: 100px;
+                }
+            }
+        }
+        .footer {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            padding: 0 20px;
+            text-align: right;
+        }
+    }
+
+    .reject-detail-shade {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background-color: @commentapprovebtns-bgc-reject-detail-shade;
+        opacity: 0.3;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+.reject-menu {
+    // padding: 0 !important;
+    font-size: 13px;
+    color: @commentapprovebtns-c-reject-menu;
+    .u-dropdown-menu-item {
+        line-height: 28px !important;
+        height: 28px !important;
+        // width: 79px;
+        text-align: center;
+        margin-top: 0;
+        padding: 0 15px !important;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .u-dropdown-menu-item.menu-item {
+        // padding:5px 10px !important;
+        cursor: pointer;
+    }
+}
+.dagrechart-wrapper {
+    max-height: 200px;
+}
+.approve-img {
+    max-height: 300px;
+}
+//Q:模态框里包含table出现双滚动条
+.approve-warning-modal .u-modal-body {
+    overflow: hidden;
+}
+.rejectMode {
+    font-size: 13px;
+    color: @commentapprovebtns-c-rejectMode;
+    margin-right: 15px;
+    span {
+        font-size: 10px;
+    }
+    .u-radio-group {
+        margin-left: 12px;
+        .u-radio {
+            // margin-right: 5px;
+            .u-radio-label {
+                font-size: 13px;
+                padding-left: 18px;
+            }
+            .u-radio-label:before {
+                width: 15px;
+                height: 15px;
+                top: 3px;
+            }
+            .u-radio-label:after {
+                height: 7px;
+                width: 7px;
+                border-radius: 7px;
+                top: 7px;
+                left: -1px;
+            }
+        }
+    }
+    .icon-bangzhutishi {
+        color: @commentapprovebtns-c-bangzhutishi;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+}
+
+.wui-modal-dialog.addApprover{
+    .body-content{
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .content-inner{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            .label{
+                width: 90px;
+            }
+            .content{
+                width: calc(~"100% - 100px");
+                .base-form-control-wrapper, .textarea-wrap{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.wui-modal-dialog.approve-warning-modal .base-modal-body{
+    overflow: hidden;
+}

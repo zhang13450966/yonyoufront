@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>建筑行业服务</title>
+    <defs>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-1">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-2">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-3">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-4">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-5">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-6">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-7">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-5.25621213e-14%" x2="50%" y2="97.0412796%" id="linearGradient-8">
+            <stop stop-color="#2EB1F3" offset="0%"></stop>
+            <stop stop-color="#33CCF8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="建筑行业服务" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(8.000000, 10.000000)">
+            <polygon id="路径" fill-opacity="0.99" fill="url(#linearGradient-1)" opacity="0.7" points="6.11108744 18.5714286 9.33775824 18.5714286 9.33775824 41.9041329 6.11108744 41.9041329"></polygon>
+            <polygon id="路径" fill-opacity="0.99" fill="url(#linearGradient-2)" opacity="0.7" points="5.73617991 16.6610088 4.70867137 13.5322985 29.9066914 1.18585634 30.9339771 4.3147945"></polygon>
+            <polygon id="路径" fill-opacity="0.99" fill="url(#linearGradient-3)" opacity="0.7" points="37.4236336 1.36040786 50.951456 10.1864243 49.2159202 12.9687661 35.6885433 4.1429775"></polygon>
+            <path d="M2.44851659,38.3809524 L11.7292063,38.3809524 C12.4064726,38.3809524 12.9555054,38.9299852 12.9555054,39.6072515 L12.9555054,42.1070342 C12.9555054,42.7843005 12.4064726,43.3333333 11.7292063,43.3333333 L2.44851659,43.3333333 C1.7712503,43.3333333 1.22221749,42.7843005 1.22221749,42.1070342 L1.22221749,39.6072515 C1.22221749,38.9299852 1.7712503,38.3809524 2.44851659,38.3809524 Z" id="路径备份" fill="url(#linearGradient-4)"></path>
+            <path d="M1.2262991,13.5322985 L43.6367457,13.5322985 C44.314012,13.5322985 44.8630448,14.0813313 44.8630448,14.7585976 L44.8630448,18.0028498 C44.8630448,18.6801161 44.314012,19.2291489 43.6367457,19.2291489 L1.2262991,19.2291489 C0.54903281,19.2291489 3.04985805e-16,18.6801161 0,18.0028498 L0,14.7585976 C-8.29411999e-17,14.0813313 0.54903281,13.5322985 1.2262991,13.5322985 Z" id="路径" fill="url(#linearGradient-5)"></path>
+            <path d="M52.3111448,8.82556067 C53.7960416,8.82556067 55,10.056764 55,11.5757722 L55,21.1856752 C55,22.7046834 53.7960416,23.9361146 52.3111448,23.9361146 L44.6576322,23.9361146 C43.1727354,23.9361146 41.9687769,22.7046834 41.9687769,21.1859031 L41.9687769,11.5757722 C41.9687769,10.0567639 43.1727353,8.82556067 44.6576322,8.82556067 L52.3111448,8.82556067 Z M49.0089172,14.3262116 L47.9598598,14.3262116 C47.6212266,14.3262116 47.3467102,14.600728 47.3467102,14.9393611 L47.3467102,17.8223142 C47.3467102,18.1609473 47.6212266,18.4354637 47.9598598,18.4354637 L49.0089172,18.4354637 C49.3475504,18.4354637 49.6220668,18.1609473 49.6220668,17.8223142 L49.6220668,14.9393611 C49.6220668,14.600728 49.3475504,14.3262116 49.0089172,14.3262116 Z" id="形状结合" fill="url(#linearGradient-6)"></path>
+            <rect id="矩形" fill="url(#linearGradient-7)" x="26.8889978" y="0" width="12.2221749" height="50.7619048" rx="2.45259821"></rect>
+            <path d="M22.644683,46.4993491 L42.5836163,46.4993491 C43.2608826,46.4993491 43.8099154,47.0483819 43.8099154,47.7256482 L43.8099154,50.7737009 C43.8099154,51.4509672 43.2608826,52 42.5836163,52 L22.644683,52 C21.9674167,52 21.4183839,51.4509672 21.4183839,50.7737009 L21.4183839,47.7256482 C21.4183839,47.0483819 21.9674167,46.4993491 22.644683,46.4993491 Z" id="路径" fill="url(#linearGradient-8)"></path>
+        </g>
+    </g>
+</svg>

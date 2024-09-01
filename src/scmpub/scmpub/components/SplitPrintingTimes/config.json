@@ -1,0 +1,6 @@
+{
+	"output": "scmpub/scmpub/components/SplitPrintingTimes",
+	"hash": false,
+	"dependModuleName": [ "uap/common/components/printOnClient" ],
+	"dependjs": [ "../../../../uap/common/components/printOnClient/index.js" ]
+}

@@ -1,0 +1,39 @@
+.my-tab {
+	.group {
+		padding: 0 20px;
+		margin-left: 20px;
+		&:first-child {
+			margin-top: 20px;
+		}
+		.title {
+			margin: 10px 0 10px -20px;
+			&::before {
+				content: '';
+				width: 4px;
+				height: 12px;
+				background: #e14c46;
+				border-radius: 1px;
+				display: inline-block;
+				margin-right: 6px;
+			}
+		}
+		.base-checkbox-wrapper {
+			margin: 0;
+		}
+		.nc-checkbox {
+			display: inline-block;
+			width: 30%;
+			margin-left: 20px;
+			margin-right: 24px;
+			span {
+				white-space: nowrap;
+			}
+			margin-bottom: 8px;
+		}
+		.order-list {
+			li {
+				height: 24px;
+			}
+		}
+	}
+}

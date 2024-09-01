@@ -1,0 +1,63 @@
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+/*.table {
+    min-height: 350px;
+    .separator {
+        display: inline-block;
+        width: 10px;
+        border: 1px solid #d8d8d8;
+        margin: 0 10px;
+    }
+    position: relative;
+    .overtime-detail-wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 380px;
+        z-index: 1;
+    }
+    .link {
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .staffCode, .staffName {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+        width: 72px;
+    }
+}*/
+
+.select-year-month-modal {
+    .content {
+        .flex;
+        justify-content: space-evenly;
+        & > div {
+            display: flex;
+            label {
+                display: block;
+                padding: 5px;
+            }
+            .base-form-control-wrapper{
+                flex: 1;
+            }
+        }
+    }
+}
+
+.u-table-content {
+    .u-table-thead tr th,
+    .u-table-tbody tr td {
+        padding: 0 7px 0 20px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+	"dependModuleName": [
+		"scmpub/scmpub/components/BillCodeStyle",
+		"scmpub/scmpub/components/VerticalEditTable",
+		"scmpub/scmpub/components/VerticalTable",
+		"scmpub/scmpub/components/MainOrgRef"
+	],
+	"dependjs": [
+		"../../../../scmpub/scmpub/components/BillCodeStyle/index.js",
+		"../../../../scmpub/scmpub/components/VerticalEditTable/index.js",
+		"../../../../scmpub/scmpub/components/VerticalEditTable/index.js",
+		"../../../../scmpub/scmpub/components/MainOrgRef/index.js"
+	]
+}

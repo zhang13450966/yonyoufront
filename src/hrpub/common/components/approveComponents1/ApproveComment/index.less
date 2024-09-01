@@ -1,0 +1,160 @@
+// 颜色变量
+@approvecomment-bgc: #e0f2ff; // green: #ECF6F1
+@approvecomment-bc-text: #d9d9d9;
+@approvecomment-c-text: #707274;
+@approvecomment-c-sel-item: #555;
+@approvecomment-c-sel-item-span: #008fd7;
+@approvecomment-bgc-icon: #e4e4e4;
+@approvecomment-c-icon-before: #555;
+@approvecomment-c-u-close-span: #757f8c;
+@approvecomment-bc-modal-title: #d9d9d9;
+@t-modal-header-bc: #d9d9d9;
+@approvecomment-bgc-button-close: #ecf2f9;
+@approvecomment-c-button-close: #000912;
+
+.approve-comment {
+    // background-color: @approvecomment-bgc;
+    padding: 0px 10px;
+    .approve-comment-text {
+        position: relative;
+        padding-left: 700px;
+        height: 40px;
+        float: right;
+        .comment-icon {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            cursor: pointer;
+            color: #36ab60;
+        }
+        .textarea-wrap{
+            .textarea-countClass{
+                right: 10px; // 25
+            }
+            .comment-text {
+                height: 40px;
+                width: 100%;
+            }
+        }
+    }
+
+    .comment-text {
+        //width:497px;
+        height: 98px;
+        border-radius: 4px;
+        border: 1px solid @approvecomment-bc-text;
+        padding: 10px;
+        font-size: 13px;
+        color: @approvecomment-c-text;
+    }
+    .comment-sel {
+        text-align: right;
+        // .sel-item:last-child {
+        //     margin-right: 0;
+        // }
+        .sel-item {
+            display: block;
+            text-align: left;
+            margin:  6px 0;
+            padding: 0 3px;
+            margin-right: 16px;
+            .nc-checkbox.u-checkbox{
+                // margin-left: 18px;
+                line-height: inherit;
+            }
+            .u-checkbox-label {
+                color: @approvecomment-c-sel-item;
+                &:after,&:before {
+                    top: 0px;
+                    right: 0;
+                }
+            }
+        }
+        .check-track {
+            .u-checkbox-label {
+                color: #111;
+                font-size: 12px;
+            }
+        }
+        span.sel-item {
+            // text-decoration: underline;
+            cursor: pointer;
+            color: @approvecomment-c-sel-item-span;
+            font-size: 12px;
+        }
+    }
+    .comment-btns {
+        margin-top: 6px;
+        text-align: right;
+        .comment-icon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 3px;
+            margin-left: 10px;
+            text-align: center;
+            vertical-align: top;
+            cursor: pointer;
+            background: @approvecomment-bgc-icon;
+            &:before {
+                position: relative;
+                top: 0;
+                color: @approvecomment-c-icon-before;
+            }
+        }
+    }
+}
+
+.user-modal.nc-modal.u-modal {
+    .u-modal-dialog {
+        height: 500px !important;
+    }
+    .u-modal-dialog .u-modal-content {
+        // overflow: visible;
+        border-radius: 3px;
+        height: auto;
+        //width:640px;
+        //height:580px;
+        // width: 810px;
+        max-height: 510px;
+        .u-modal-header {
+            // padding: 0;
+            .u-close {
+                margin-top: 0px;
+                margin-right: 6px;
+                outline: none;
+                span {
+                    color: @approvecomment-c-u-close-span;
+                    font-size: 24px;
+                }
+            }
+            // .u-modal-title {
+            //     border-bottom: 1px solid @approvecomment-bc-modal-title;
+            //     height: 100%;
+            //     line-height: 40px;
+            //     font-size: 14px;
+            //     color: rgba(71, 77, 84, 1);
+            //     padding-left: 20px;
+            // }
+        }
+        .u-modal-body {
+            padding: 0;
+        }
+        .u-modal-footer {
+            height: 40px;
+            border-top: 1px solid @t-modal-header-bc;
+            padding-top: 5px;
+            padding-right: 20px;
+            .u-button {
+                width: 68px;
+                font-size: 13px;
+            }
+            .button-close {
+                background: @approvecomment-bgc-button-close;
+                border-radius: 3px;
+                color: @approvecomment-c-button-close;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+	"dependModuleName": [ "uap/common/components/ApproveDetail", "uap/common/components/approvalTrans" ],
+	"dependjs": [
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/approvalTrans/index.js"
+	]
+}

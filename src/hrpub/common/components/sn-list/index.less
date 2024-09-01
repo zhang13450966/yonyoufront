@@ -1,0 +1,96 @@
+
+html body {
+  height: 100%;
+  .sn-list {
+    //border-top: 1px solid #cccccc;
+    //border-bottom: 1px solid #cccccc;
+    border:  1px solid #cccccc;
+    width: 100%;
+    height: 450px;
+    ::-webkit-scrollbar
+    {
+      width: 5px;
+      height: 16px;
+      background-color: #F5F5F5;
+    }
+    ::-webkit-scrollbar-thumb
+    {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: rgba(218, 211, 227, 0.26);
+    }
+    .sn-list-header {
+      background: #dddddd;
+      height:35px;
+      padding-top:5px;
+      .u-check-box .u-checkbox-label:after, .u-checkbox .u-checkbox-label:before{
+        top:-13px;
+      }
+    }
+
+    .sn-left-list {
+      display: inline-block;
+      width: 80%;
+      height: 100%;
+      border-right: 1px solid #d0d0d0;
+      overflow: hidden;
+      .u-table-content .u-table-thead tr{
+        border-bottom: 1px solid #d0d0d0;
+        border-top: 0px solid #d0d0d0;
+      }
+      .u-table-placeholder{
+        display:none;
+      }
+      .u-checkbox .u-checkbox-label:after, .u-checkbox .u-checkbox-label:before {
+        top:3px;
+      }
+    }
+    .sn-right-list {
+      display: inline-block;
+      width: 20%;
+      height: 100%;
+      overflow-x: hidden;
+      .sn-right-list-header{
+        height: 35px;
+        background: #f3f3f3;
+        padding-top: 8px;
+        //position:absolute;
+        width: 100%;
+        color:#111111;
+        font-size:13px;
+        label{
+          top :-1px
+        }
+      }
+      .sn-right-list-content{
+        overflow:auto;
+        //margin-top:45px;
+        position:relative;
+        max-height:85%;
+        color: #555555;
+      }
+      .u-checkbox .u-checkbox-label:after, .u-checkbox .u-checkbox-label:before {
+        width:14px;
+        height:14px;
+      }
+      .header-checkbox{
+        left:4px;
+        top:3px;
+      }
+      ul {
+        text-align: left;
+        margin-left: 5px;
+      }
+    }
+    .u-checkbox {
+      margin-left: 0px;
+    }
+    ul {
+      margin: 5px 0px 5px 0px;
+      li {
+        margin-top: 5px;
+        height: 22px;
+      }
+    }
+  }
+}

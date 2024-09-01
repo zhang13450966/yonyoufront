@@ -1,0 +1,112 @@
+.ncc-hr-pagination-wrapper {
+    padding-right: 10px;
+    &.have-right-padding {
+        box-sizing: border-box;
+        padding-right: 20px;
+    }
+    height: 32px;
+    text-align: right;
+
+    .ncc-hr-pagination-letter,
+    .ncc-hr-pagination-input,
+    .ncc-hr-pagination-item {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 3px;
+        border: 1px solid rgba(219, 219, 219, 1);
+        color: #464749;
+        line-height: 26px;
+        text-align: center;
+        font-size: 13px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: all .3s;
+        user-select: none;
+
+        &.active,
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+            border-radius: 3px;
+            border: 1px solid rgba(214, 58, 57, 1);
+            color: #D63A39;
+        }
+        &.disabledBtn {
+            background-color: #f2f3f3;
+            color: #e8e1e1;
+            pointer-events: none;
+            &:hover {
+                background-color: #f2f3f3;
+                border: 1px solid rgba(219, 219, 219, 1);
+                color: #e8e1e1;
+            }
+        }
+    }
+
+    .ncc-hr-pagination-letter {
+        width: auto;
+        border: none;
+        background: transparent;
+        cursor: default;
+
+        &:hover {
+            color: #464749;
+            border: none;
+            background: transparent;
+        }
+    }
+
+    .ncc-hr-pagination-input {
+        width: 48px;
+        height: 28px;
+        text-align: center;
+        cursor: text;
+        outline: none;
+
+        &:hover {
+            color: #464749;
+            background: #fff;;
+            border: 1px solid rgba(219, 219, 219, 1);
+        }
+    }
+
+    .ncc-hr-pagination-select-wrapper {
+        margin-left: 8px;
+        position: relative;
+        top: -2px;
+    }
+
+    .ncc-hr-pagination-select {
+        width: 86px;
+        position: relative;
+        border-radius: 3px;
+    }
+
+    .ncc-hr-pagination-turn-five {
+        .icon-prev:after {
+            content: '•••';
+        }
+        .icon-next:after {
+            content: '•••';
+        }
+    }
+    .ncc-hr-pagination-turn-five:hover {
+        .icon-prev:after {
+            content: '<<';
+        }
+        .icon-next:after {
+            content: '>>';
+        }
+    }
+}
+
+.nc-lightapp-front-black {
+    .ncc-hr-pagination-wrapper {
+        .ncc-hr-pagination-input {
+            color: rgb(174, 174, 174);
+            background-color: rgb(43, 43, 48);
+            border-color: #39393f !important;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.quick-receive-modal {
+	.field-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+		.field-label {
+			width: 120px;
+			text-align: right;
+			margin-right: 8px;
+			&::before {
+				content: "*";
+				color: red;
+			}
+		}
+		.field-content {
+			width: 200px;
+		}
+	}
+}

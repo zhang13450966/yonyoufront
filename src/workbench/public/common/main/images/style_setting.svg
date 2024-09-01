@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 5</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="企业风格设置-全局" transform="translate(-40.000000, -551.000000)">
+            <g id="编组-5" transform="translate(40.000000, 551.000000)">
+                <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                <line x1="4.50534111" y1="3.01181748" x2="4.50534111" y2="17" id="路径-5" stroke="#111111" stroke-linecap="round"></line>
+                <rect id="矩形" stroke="#111111" x="3.03353154" y="12.513639" width="3" height="3" rx="1"></rect>
+                <rect id="矩形备份-2" stroke="#111111" x="8.52196128" y="5.51408622" width="3" height="3" rx="1"></rect>
+                <rect id="矩形备份-3" stroke="#111111" x="13.9735138" y="8.50576581" width="3" height="3" rx="1"></rect>
+                <line x1="10.0054446" y1="3" x2="10.0054446" y2="16.9881825" id="路径-5备份" stroke="#111111" stroke-linecap="round"></line>
+                <line x1="15.5" y1="3" x2="15.5" y2="16.9881825" id="路径-5备份-2" stroke="#111111" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

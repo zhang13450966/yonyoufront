@@ -1,0 +1,61 @@
+.add-new-modal{
+    
+    .modal-content-top{
+        height: 70px;
+        border-bottom: 1px solid #ccc;
+    }
+    .modal-content-content{
+        height: calc(~'100% - 72px');
+        .left-content{
+            height: 100%;
+            .left-tree-wrapper{
+                height: 100%;
+            }
+        }
+        .right-content{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            .right-content-top{
+                height: 50%;
+                overflow: auto;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                border-top: none;
+            }
+            .right-content-center{
+                height: 30px;
+                margin-top: 5px;
+                
+            }
+            .right-content-bottom{
+                // flex: 1;
+                height: calc(~'50% - 35px');
+                overflow: hidden;
+                .u-form-control-wrapper{
+                    height: 100%;
+                    overflow: auto;
+                }
+            }
+        }
+    }
+    
+}
+div .nc-button-wrapper, div .u-button{
+    min-width: 40px !important;
+}
+.u-modal-open .nc-modal.u-modal .u-modal-dialog .u-modal-content .u-modal-body{
+    // height: 401px !important;
+    overflow: hidden !important;
+}
+.u-modal .u-modal-body{
+    padding-top: 2px !important;
+}
+.syncTreeCom .NC_syncTreeSearch{
+    width: 180px !important;
+    margin-top: 10px;
+}
+.nc-checkbox.u-checkbox{
+    margin-left: 10px;
+}

@@ -1,0 +1,32 @@
+/*
+ * @Author: mikey.zhangchqf 
+ * @Date: 2018-07-04 15:06:44 
+ * @Last Modified by: zhangmi
+ * @Last Modified time: 2021-05-21 17:10:31
+ */
+import { BUYINGREQ_CARD, BUYINGREQ_LIST, ATTRCODE } from '../../siconst';
+import poc from 'uap/common/components/printOnClient';
+const { printPreview } = poc;
+export default function buttonClick(props) {
+	// 获取选中行
+
+	let pk = props.form.getFormItemsValue(BUYINGREQ_CARD.formId, ATTRCODE.pk_praybill).value;
+	let pks = [];
+	pks.push(pk);
+	/**
+	 * appcode 单据的应用编码（一般不用传，方法内部自己抓取，如果需要打印的模板和当前appcode不同，需要业务组自己传一下）
+	 * nodekey 模板节点标识
+	 * oids 单据主键
+	 * printType 传true表示根据打印次数设置走插件打印，传false直接走pdf打印
+	 * realData 传true表示打印真数据，传false表示打印假数据
+	 * controlPrintNum 加了这个参数前端才会走打印次数查询，默认不走次数查询
+	 */
+	printPreview(props, BUYINGREQ_LIST.printURL, {
+		appcode: props.getAppCode(),
+		nodekey: '400400402',
+		oids: pks,
+		printType: true,
+		realData: true,
+		controlPrintNum: true
+	});
+}

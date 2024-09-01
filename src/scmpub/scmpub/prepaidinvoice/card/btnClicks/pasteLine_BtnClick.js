@@ -1,0 +1,50 @@
+/*
+ * @Author: 刘奇 
+ * @PageInfo: 卡片插入行按钮事件
+ * @Date: 2019-03-19 16:49:04 
+ * @Last Modified by: zhangflr
+ * @Last Modified time: 2020-11-11 16:27:05
+ */
+import { ajax } from 'nc-lightapp-front';
+import { PREPAIDINVOICE_CONST, CARD_BODY_BUTTONS, PrepaidinvoiceBodyItem } from '../../const';
+import { rowCopyPasteUtils, RownoUtils } from '../../../../../scmpub/scmpub/pub/tool/cardTableTools';
+import buttonController from '../viewController/buttonController';
+const ClearFields = [ PrepaidinvoiceBodyItem.bid, PrepaidinvoiceBodyItem.crowno ];
+//复制时清空ts会导致回写运输单时空指针
+export default function buttonClick(props, record, index) {
+	// 操作列上的粘贴至此
+	rowCopyPasteUtils.pasteRowsToIndex.call(
+		this,
+		props,
+		PREPAIDINVOICE_CONST.tableId,
+		index,
+		CARD_BODY_BUTTONS.EDIT,
+		CARD_BODY_BUTTONS.PASTE,
+		ClearFields
+	);
+	buttonController.call(this, props);
+	RownoUtils.setRowNo(props, PREPAIDINVOICE_CONST.tableId);
+	//粘贴需要更行表头的价税合计
+	let prepaidinvo = props.createMasterChildData(
+		PREPAIDINVOICE_CONST.cardPageId,
+		PREPAIDINVOICE_CONST.formId,
+		PREPAIDINVOICE_CONST.tableId
+	);
+	let selIndex = [ 0 ];
+	let info = {
+		rows: selIndex,
+		type: '',
+		bill: prepaidinvo
+	};
+	ajax({
+		url: PREPAIDINVOICE_CONST.pastbody,
+		data: info,
+		success: (res) => {
+			if (res.data.canDel) {
+				props.form.setAllFormValue({
+					[PREPAIDINVOICE_CONST.formId]: res.data.headvo[PREPAIDINVOICE_CONST.formId]
+				});
+			}
+		}
+	});
+}

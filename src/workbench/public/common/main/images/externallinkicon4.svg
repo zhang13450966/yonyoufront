@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#F0F4FF;fill-opacity:0;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#形状_1_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#0076FF;}
+</style>
+<g id="外部链接" transform="translate(-128.000000, -40.000000)">
+	<g id="编组-4" transform="translate(128.000000, 40.000000)">
+		<rect id="矩形备份-47" y="0" class="st0" width="40" height="40"/>
+		<g id="编组" transform="translate(3.000000, 3.000000)">
+			
+				<linearGradient id="形状_1_" gradientUnits="userSpaceOnUse" x1="-270.5918" y1="425.2152" x2="-270.5918" y2="426.2152" gradientTransform="matrix(31.095 0 0 -34.3481 8431.0645 14639.6846)">
+				<stop  offset="0" style="stop-color:#00C2D1"/>
+				<stop  offset="1" style="stop-color:#00D0CA"/>
+			</linearGradient>
+			<path id="形状" class="st1" d="M25.4,9.9h7.1C30.3,5.1,26,1.6,20.8,0.4C22.9,2.3,24.5,5.6,25.4,9.9z M20.8,33.9
+				c5.2-1.2,9.6-4.7,11.8-9.5h-7.1C24.5,28.7,22.9,32.1,20.8,33.9z M9.8,24.5c1.3,5.8,4.1,9.9,7.2,9.9s5.9-4.1,7.2-9.9L9.8,24.5
+				L9.8,24.5z M24.2,9.9C22.9,4.1,20.1,0,17,0s-5.9,4.1-7.2,9.9L24.2,9.9L24.2,9.9z M13.2,0.4C8,1.6,3.7,5.1,1.5,9.9h7.1
+				C9.5,5.6,11.1,2.3,13.2,0.4L13.2,0.4z M8.6,24.5H1.5c2.2,4.7,6.6,8.3,11.8,9.5C11.1,32.1,9.5,28.7,8.6,24.5L8.6,24.5z"/>
+			<path id="形状结合" class="st2" d="M6.5,12.6l1,4.2c0.2,0.9,0.3,1.9,0.5,2.9l0,0h0.1c0.1-1,0.2-1.9,0.3-2.9l0,0L9,12.6h2.1
+				l-1.6,9.1H6.8l-0.8-4c-0.1-0.7-0.3-1.4-0.4-2.1l0,0H5.5c-0.1,0.7-0.2,1.4-0.4,2.1l0,0l-0.8,4v0H1.7L0,12.6h2.2l0.6,4.2l0.4,2.9h0
+				c0.2-1,0.4-1.9,0.5-2.9l0,0l0.9-4.2H6.5z M13.7,12.6l0.6,4.2l0.4,2.9h0c0.2-1,0.4-1.9,0.5-2.9l0,0l0.9-4.2H18l1,4.2
+				c0.2,0.9,0.3,1.9,0.5,2.9l0,0h0.1c0.1-1,0.2-1.9,0.3-2.9l0,0l0.6-4.2h2.1L21,21.7h-2.8l-0.8-4c-0.1-0.7-0.3-1.4-0.4-2.1l0,0H17
+				c-0.1,0.7-0.2,1.4-0.4,2.1l0,0l-0.8,4h-2.7l-1.7-9.1H13.7z M25.1,12.6l0.6,4.2l0.4,2.9h0c0.2-1,0.4-1.9,0.5-2.9l0,0l0.9-4.2h1.8
+				l1,4.2c0.2,0.9,0.3,1.9,0.5,2.9l0,0H31c0.1-1,0.2-1.9,0.3-2.9l0,0l0.6-4.2H34l-1.6,9.1h-2.8l-0.8-4c-0.1-0.7-0.3-1.4-0.4-2.1l0,0
+				h-0.1c-0.1,0.7-0.2,1.4-0.4,2.1l0,0l-0.8,4h-2.7l-1.7-9.1H25.1z"/>
+		</g>
+	</g>
+</g>
+</svg>

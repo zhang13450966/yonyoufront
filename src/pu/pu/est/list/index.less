@@ -1,0 +1,115 @@
+.loading-content {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.7);
+	z-index: 100000;
+	img {
+		height: 80px;
+		margin-right: 20px;
+	}
+	> div {
+		display: flex;
+		text-align: left;
+		flex-direction: column;
+		> span {
+			font-size: 14px;
+			margin-bottom: 6px;
+			&:first-child {
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.calc-result-modal {
+	.modal-header-left {
+		align-items: center;
+	}
+	.base-modal-body {
+		display: flex;
+		.title {
+			font-size: 16px;
+			color: var(--pui-black-font-color-3, #111);
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+		.iconfont {
+			font-size: 28px;
+			color: #67c23a;
+			margin-right: 18px;
+		}
+		.pu-est-calc-result-modal > div {
+			margin: 10px 0;
+		}
+		.pu-est-calc-result-modal > div:first-child {
+			margin-bottom: 20px;
+		}
+	}
+	// .u-modal-body {
+	// 	display: flex;
+	// 	padding: 20px;
+	// 	padding-left: 70px;
+	// 	.iconfont {
+	// 		font-size: 28px;
+	// 		color: #67c23a;
+	// 		margin-right: 18px;
+	// 	}
+	// 	> div {
+	// 		font-size: 14px;
+	// 		color: #555;
+	// 		.title {
+	// 			font-size: 16px;
+	// 			color: #111;
+	// 			margin-top: 5px;
+	// 			margin-bottom: 20px;
+	// 		}
+	// 		.title.night {
+	// 			color: @nc-theme-title-font-c;
+	// 		}
+
+	// 		> div:nth-child(2) {
+	// 			margin: 10px 0;
+	// 			span {
+	// 				margin-right: 40px;
+	// 			}
+	// 		}
+	// 		.fail {
+	// 			color: #e14c46;
+	// 		}
+	// 		> div {
+	// 			margin-top: 8px;
+	// 		}
+	// 	}
+	// }
+	// .u-modal-footer {
+	// 	border-top: 1px solid #d0d0d0;
+	// 	height: 44px;
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: flex-end;
+	// 	padding: 0 20px;
+	// }
+}
+
+.child-table-header {
+	padding: 0 20px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: var(--pui-black-font-color-1, #555);
+	background: var(--pui-black-derived-color-9, #fff);
+	border-bottom: 1px solid var(--pui-black-derived-color-5, #c6ccd7);
+	.child-table-header-title {
+		color: var(--pui-black-font-color-3, #111);
+		font-size: 16px;
+		margin-right: 8px;
+	}
+}

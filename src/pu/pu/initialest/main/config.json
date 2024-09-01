@@ -1,0 +1,20 @@
+{
+	"dependModuleName": [
+		"epmp/exports/components/Inspection",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/excelImportconfig",
+		"uap/common/components/ExcelOutput",
+		"uap/common/components/NCUploader",
+		"scmpub/scmpub/components/BillCodeStyle",
+		"scmpub/scmpub/components/ResumeModal"
+	],
+	"dependjs": [
+		"../../../../epmp/exports/components/Inspection/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/excelImportconfig/index.js",
+		"../../../../uap/common/components/ExcelOutput/index.js",
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../scmpub/scmpub/components/BillCodeStyle/index.js",
+		"../../../../scmpub/scmpub/components/ResumeModal/index.js"
+	]
+}

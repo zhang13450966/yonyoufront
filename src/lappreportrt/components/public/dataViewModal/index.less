@@ -1,0 +1,206 @@
+.data-view-left-container {
+    //height: calc(~"100% - 50px");
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    .table-container {
+        width: calc(100% - 270px);
+        height: 100%;
+        overflow: auto;
+        padding: 0;
+        border-left: 1px solid #ccc;
+    }
+    .tree-container {
+        width: 270px;
+        height: 100%;
+        // border-right: 1px solid #ccc;
+        overflow: auto;
+    }
+    //   .area-set-head {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     height: 50px;
+
+    //     >span {
+    //       margin: 0 1rem;
+    //     }
+
+    //     .refer-wrapper {
+    //       width: 40%;
+    //     }
+
+    //     .radio-group-hotkey-wrapper {
+    //       margin-left: 10px;
+    //     }
+    //   }
+
+    // .dragWidthCom {
+    //     border-top: 1px solid #d0d0d0;
+    //     // height: calc(~"100% - 50px");
+    //     height: 100%;
+    // }
+
+    .tree-area {
+        //margin-left: 1rem;
+
+        position: relative;
+        // height: 666px;
+        // max-height: 666px;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        .expand-area-container {
+            height: 90px;
+            min-height: 90px;
+            overflow: auto;
+            .expand-area-title {
+                font-size: 12px;
+                color: #606069;
+                margin-bottom: 6px;
+                padding-left: 16px;
+                padding-top: 6px;
+            }
+            .expand-area-item {
+                height: 24px;
+                line-height: 24px;
+                border-radius: 4px;
+                padding-left: 16px;
+                cursor: pointer;
+                color: #1b1b2d;
+            }
+            .nc-theme-otab-area-bgc {
+                background: #f3f3f3;
+            }
+        }
+        .area-expand-right-dom {
+            height: calc(100% - 107px);
+            max-height: calc(100% - 107px);
+            color: #606069;
+            .tip {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        .tree-desc {
+            padding-left: 16px;
+        }
+
+        // dom注释掉了，样式也应该注释掉
+        // .tree-filter {
+        //   margin: 4px 0 5px 16px;
+        //   .u-form-control-wrapper {
+        //     width: 90%;
+        //   }
+        // }
+        .tree-container {
+            height: calc(100% - 29px);
+            // margin-top: -13px;
+            margin-top: -6px;
+            // overflow: auto;
+            max-height: 500px;
+            padding-left: 16px;
+            .tree-hotkeys-wrapper {
+                margin-top: 14px;
+            }
+            // .synctree-area {
+            //   overflow: auto !important;
+            //   .tree-hotkeys-wrapper {
+            //     overflow: inherit !important;
+            //   }
+            // }
+            // .NC_syncTreeSearch {
+            //   margin-bottom: 32px;
+            // }
+        }
+
+        // .asynctree {
+        //   margin-left: 1rem;
+        // }
+
+        // .asyncTreeCom .u-tree {
+        //   margin-top: 10px;
+        //   margin-left: 1rem;
+        // }
+
+        // .asyncTreeCom .asynctree-area {
+        //   overflow: visible;
+        // }
+
+        .empty-tip {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #d7d7d7;
+            text-align: center;
+
+            i {
+                display: block;
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        .tip {
+            position: relative;
+            top: 38px;
+            z-index: 2;
+            color: #d7d7d7;
+            padding-left: 16px;
+        }
+    }
+}
+
+.report-data-view-modal {
+    // .data-view-modal-header {
+    //   display: flex;
+    // }
+    .data-view-body {
+        padding: 0;
+    }
+    // .nc-button-wrapper {
+    //   margin-left: 10px !important;
+    // }
+    .icon-bangzhutishi {
+        color: #555;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+
+    .data-view-title {
+        position: relative;
+        // top: 2px;
+        left: 10px;
+    }
+}
+.save-as-body-container {
+    width: 100%;
+    .save-as-input {
+        display: flex;
+        white-space: nowrap;
+        margin-bottom: 20px;
+        align-items: center;
+        .save-as-input-text {
+            width: 200px;
+        }
+    }
+}
+
+.draggleLine-wrapper {
+    .draggleLine {
+        width: 100%;
+        // height: 1px;
+        border-bottom: 1px solid #c6ccd7;
+        cursor: row-resize;
+        margin: 8px 0;
+    }
+}
+
+// #dataViewModal {
+//   .u-modal-body {
+//     padding: 0;
+//   }
+// }

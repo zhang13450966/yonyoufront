@@ -1,0 +1,164 @@
+@workflow-bgc-comment: #e0f2ff; // green: #ECF6F1
+@workflow-c-comment-text: #707274;
+@workflow-bc-comment-text: #d9d9d9;
+@workflow-c-comment-sel: #474d54;
+@workflow-bgc-comment-icon: #f5f6f8;
+@workflow-bc-comment-icon: #d0d0d0;
+
+@workflow-c-comment-bohui: #7cc6f9;
+@workflow-c-comment-yujing: #f78c66;
+
+@workflow-c-modal-close-span: #757f8c;
+@t-modal-header-bc: #d9d9d9;
+@workflow-c-modal-title: #474d54;
+@workflow-c-modal-btn-close: #000912;
+@workflow-bgc-modal-btn-close: #ecf2f9;
+
+// @import '../../public/standardStyle/theme.less';
+
+.workflow-comment {
+    // background-color: @workflow-bgc-comment;
+    padding:6px 10px;
+    height: 105px;
+    .comment-btns .approve-btns{
+        margin-top: 5px;
+    }
+    .approve-comment-text {
+        position: relative;
+        height: 40px;
+        float: right;
+        padding-left: 700px;
+        .comment-icon {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            cursor: pointer;
+            color: #36ab60;
+        }
+        .textarea-wrap .textarea-countClass {
+            // right: 25px;
+        }
+    }
+
+    .comment-text {
+        //width:497px;
+        height: 98px;
+        border-radius: 4px;
+        border: 1px solid @workflow-bc-comment-text;
+        padding: 10px;
+        font-size: 13px;
+        color: @workflow-c-comment-text;
+    }
+    .comment-sel {
+        .sel-item {
+            margin-right: 20px;
+            color: @workflow-c-comment-sel;
+            .u-checkbox-label {
+                // color: @workflow-c-comment-sel;
+                &:after,
+                &:before {
+                    top: 2px;
+                }
+            }
+        }
+        span.sel-item {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .comment-btns{
+        margin-top:5px;
+        text-align: right;
+        .yujing_sign,
+        .bohui_sign {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .bohui_sign {
+            color: @workflow-c-comment-bohui;
+            border: 1px solid @workflow-c-comment-bohui;
+        }
+        .yujing_sign {
+            color: @workflow-c-comment-yujing;
+            border: 1px solid @workflow-c-comment-yujing;
+        }
+        // .icon-yujing, .icon-xiaoxi{
+        //     color: #d7332c;
+        //     display: inline-block;
+        //     height: 30px;
+        //     width: 30px;
+        //     vertical-align: middle;
+        //     margin-left: 5px;
+        //     border-radius: 4px;
+        //     background: #e0e0e0;
+        //     line-height: 30px;
+        //     text-align: center;
+        // }
+        .fujianBtn.nc-button-wrapper{
+            min-width: 0;
+            .comment-icon {
+                // display: inline-block;
+                // width: 30px;
+                // height: 30px;
+                // background: @workflow-bgc-comment-icon;
+                // border-radius: 4px;
+                // margin-left: 10px;
+                // text-align: center;
+                // vertical-align: top;
+                // border: 1px solid @workflow-bc-comment-icon;
+                // cursor: pointer;
+                &:before {
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+    }
+}
+
+.user-modal {
+    .u-modal-dialog .u-modal-content {
+        // width:640px;
+        // height:570px;
+        // width: 810px;
+        max-height: 510px;
+        .u-modal-header {
+            // padding: 0;
+            .u-close {
+                margin-top: 0px;
+                margin-right: 6px;
+                outline: none;
+                span {
+                    color: @workflow-c-modal-close-span;
+                    font-size: 24px;
+                }
+            }
+            // .u-modal-title {
+            //     border-bottom: 1px solid @t-modal-header-bc;
+            //     height: 100%;
+            //     line-height: 40px;
+            //     font-size: 14px;
+            //     color: @workflow-c-modal-title;
+            //     padding-left: 20px;
+            // }
+        }
+        .u-modal-body {
+            padding: 0;
+        }
+        .u-modal-footer {
+            height: 40px;
+            border-top: 1px solid @t-modal-header-bc;
+            padding-top: 5px;
+            padding-right: 20px;
+            .u-button {
+                width: 68px;
+                font-size: 13px;
+            }
+            .button-close {
+                background: @workflow-bgc-modal-btn-close;
+                border-radius: 3px;
+                color: @workflow-c-modal-btn-close;
+            }
+        }
+    }
+}

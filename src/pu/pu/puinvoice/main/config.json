@@ -1,0 +1,32 @@
+{
+	"dependModuleName": [
+		"sscivm/ivmpub/components/invoice-link",
+		"sscrp/rppub/components/image",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/NCUploader",
+		"uap/common/components/approvalTrans",
+		"uap/common/components/scanCodeView",
+		"scmpub/scmpub/components/MergePrinting",
+		"scmpub/scmpub/components/Image",
+		"scmpub/scmpub/components/BillCodeStyle",
+		"scmpub/scmpub/components/ResumeModal",
+		"uap/common/components/printOnClient",
+		"uap/common/components/printlimitModal",
+		"sscivm/ivmpub/components/invoice-uploader"
+	],
+	"dependjs": [
+		"../../../../sscivm/ivmpub/components/invoice-link/index.js",
+		"../../../../sscrp/rppub/components/image/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../uap/common/components/approvalTrans/index.js",
+		"../../../../uap/common/components/scanCodeView/index.js",
+		"../../../../uap/common/components/printOnClient/index.js",
+		"../../../../scmpub/scmpub/components/MergePrinting/index.js",
+		"../../../../scmpub/scmpub/components/Image/index.js",
+		"../../../../scmpub/scmpub/components/BillCodeStyle/index.js",
+		"../../../../scmpub/scmpub/components/ResumeModal/index.js",
+		"../../../../uap/common/components/printlimitModal/index.js",
+		"../../../../sscivm/ivmpub/components/invoice-uploader/index.js"
+	]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>默认浅图标</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="默认浅图标" transform="translate(0.600000, 0.000000)">
+            <rect id="矩形-copy-7" fill="#E1E4EB" x="0" y="0" width="24" height="24" rx="3"></rect>
+            <path d="M3.1145786,0.956707482 L20.9385731,0.956707482 C22.0431426,0.956707482 22.9385731,1.85213798 22.9385731,2.95670748 L22.9385731,5.95670748 L22.9385731,5.95670748 L1.1145786,5.95670748 L1.1145786,2.95670748 C1.1145786,1.85213798 2.0100091,0.956707482 3.1145786,0.956707482 Z" id="矩形-copy-7" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,58 @@
+.container-wrap {
+    background: #fff;
+    & > div:nth-child(1) {
+        // padding: 20px;
+    }
+    border-radius: 3px;
+    .tabs-nav-bar {
+        position: relative;
+        .btn-group {
+            position: absolute;
+            right: 20px;
+            top: 5px;
+            z-index: 99;
+        }
+
+        .import-btn-groups {
+            display: inline-block;
+            position: relative;
+            &:hover {
+                .import-list {
+                    display: block;
+                }
+            }
+            .import-list {
+                display: none;
+                transform-origin: center top;
+                position: absolute;
+                top: 22px;
+                right: 0;
+
+                box-shadow: 0 0 0 1px rgba(9, 30, 66, .08);
+                border-radius: 3px;
+                z-index: 1;
+                // padding: 10px 0;
+                margin: 5px 0;
+                background-color: #fff;
+                border: 1px solid #ebeef5;
+                li {
+                    line-height: 28px;
+                    padding: 0 10px;
+                    white-space: nowrap;
+                    &:hover {
+                        background: #e4e4e4;
+                        color: #555;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .refer-input-common {
+        width: 200px;
+    }
+}
+
+.form-wrap .form-item .form-item-control .form-component-item-wrapper.browse.refer-wrapper .imrefer {
+    display: none !important;
+}

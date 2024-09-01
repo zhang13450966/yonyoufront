@@ -1,0 +1,48 @@
+{
+    "data":[
+    {
+        "children":[]
+        ,"nodeData":
+        {
+            "nodeValue":
+            {
+                "repSort":
+                {
+                    "assetindustry":"0","assetlayer":"4","code":1,"creationtime":"2018-12-21 14:20:15","creator":"1001A010000000000CCR","def1":1,"def2":1,"def3":1,"def4":1,"def5":1,"dr":"0","innercode":"JCBE","m_isDirty":false,"modifiedtime":1,"modifier":1,"modulecode":"hrwa","name":"sssds","name2":1,"name3":1,"name4":1,"name5":1,"name6":1,"note":1,"pk_dir":"1001A010000000001DCI","pk_group":"0001A010000000000D8G","pk_org":"0001A910000000000DYA","pk_parent":1,"seq":1,"status":"0","sysinit":"N","ts":"2018-12-21 14:19:46"
+                }
+            }
+        }
+        ,"pid":"1001A010000000001DCI","code":"sssds","id":"1001A010000000001DCI","innercode":"","key":"1001A010000000001DCI","name":"sssds","refname":"sssds","refpk":"1001A010000000001DCI","title":"sssds"
+    }
+    ,
+    {
+        "children":[]
+        ,"nodeData":
+        {
+            "nodeValue":
+            {
+                "repSort":
+                {
+                    "assetindustry":"0","assetlayer":"4","code":1,"creationtime":"2018-12-21 14:20:15","creator":"1001A010000000000CCR","def1":1,"def2":1,"def3":1,"def4":1,"def5":1,"dr":"0","innercode":"JCBE","m_isDirty":false,"modifiedtime":1,"modifier":1,"modulecode":"hrwa","name":"sssds","name2":1,"name3":1,"name4":1,"name5":1,"name6":1,"note":1,"pk_dir":"1001A010000000001DCI","pk_group":"0001A010000000000D8G","pk_org":"0001A910000000000DYA","pk_parent":1,"seq":1,"status":"0","sysinit":"N","ts":"2018-12-21 14:19:46"
+                }
+            }
+        }
+        ,"pid":"1001Z7100000000135Q4","code":"单方案薪资报表","id":"1001Z7100000000135Q4","innercode":"","key":"1001Z7100000000135Q4","name":"单方案薪资报表","refname":"单方案薪资报表","refpk":"1001Z7100000000135Q4","title":"单方案薪资报表"
+    }
+    ,
+    {
+        "children":[]
+        ,"nodeData":
+        {
+            "nodeValue":
+            {
+                "repSort":
+                {
+                    "assetindustry":"0","assetlayer":"4","code":1,"creationtime":"2018-12-21 14:20:15","creator":"1001A010000000000CCR","def1":1,"def2":1,"def3":1,"def4":1,"def5":1,"dr":"0","innercode":"JCBE","m_isDirty":false,"modifiedtime":1,"modifier":1,"modulecode":"hrwa","name":"sssds","name2":1,"name3":1,"name4":1,"name5":1,"name6":1,"note":1,"pk_dir":"1001A010000000001DCI","pk_group":"0001A010000000000D8G","pk_org":"0001A910000000000DYA","pk_parent":1,"seq":1,"status":"0","sysinit":"N","ts":"2018-12-21 14:19:46"
+                }
+            }
+        }
+        ,"pid":"1001Z7100000000135Q5","code":"多方案薪资报表","id":"1001Z7100000000135Q5","innercode":"","key":"1001Z7100000000135Q5","name":"多方案薪资报表","refname":"多方案薪资报表","refpk":"1001Z7100000000135Q5","title":"多方案薪资报表"
+    }
+    ],"error":1,"formulamsg":1,"success":true
+}

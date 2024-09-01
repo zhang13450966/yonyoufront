@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'hrfont';
+    src: url('../../static/fonts/iconfont.eot');
+    src: url('../../static/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../../static/fonts/iconfont.woff2') format('woff2'),
+    url('../../static/fonts/iconfont.woff') format('woff'),
+    url('../../static/fonts/iconfont.ttf') format('truetype'),
+    url('../../static/fonts/iconfont.svg#hrfont') format('svg');
+}
+
+#app{
+    min-width: 0 !important;
+}
+
+.hr-chartTile-common() {
+    //padding: 12px 14px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*.hr-chartTile-title {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+    }*/
+
+    .hr-chartTile-ico-refresh {
+        width: 25px;
+        height: 18px;
+        position: absolute;
+        left: 6px;
+        bottom: 4px;
+    }
+    .hrfont {
+        font-size: 18px;
+        cursor: pointer;
+        font-family: "hrfont" !important;
+    }
+}
+
+.hr-chartTile-light {
+    .hr-chartTile-common();
+
+    background-color: rgba(255, 255, 255, 1);
+
+    .hr-chartTile-title {
+        display: block;
+        padding-top: 16px;
+        padding-left: 16px;
+        line-height: 21px;
+        font-size: 14px;
+        color: #2b2c42;
+    }
+    .hrfont {
+        color: #D2D2D2;
+    }
+}
+
+.hr-chartTile-dark {
+    .hr-chartTile-common();
+
+    background-color: rgba(40, 40, 49, 1);
+
+    .hr-chartTile-title {
+        color: rgba(217, 217, 217, 1);
+    }
+    .hrfont {
+        color: #B0B0B0;
+    }
+}

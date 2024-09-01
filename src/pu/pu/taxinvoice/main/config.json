@@ -1,0 +1,14 @@
+{
+	"dependModuleName": [
+		"epmp/exports/components/Inspection",
+		"uap/common/components/ApproveDetail",
+		"uap/common/components/NCUploader",
+		"uap/common/components/approvalTrans"
+	],
+	"dependjs": [
+		"../../../../epmp/exports/components/Inspection/index.js",
+		"../../../../uap/common/components/ApproveDetail/index.js",
+		"../../../../uap/common/components/NCUploader/index.js",
+		"../../../../uap/common/components/approvalTrans/index.js"
+	]
+}

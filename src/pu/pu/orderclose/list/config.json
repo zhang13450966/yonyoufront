@@ -1,0 +1,6 @@
+{
+	"dependModuleName": [ "uap/common/components/printOnClient" ],
+	"dependjs": [ "../../../../uap/common/components/printOnClient/index.js" ,
+		          "../../../../scmpub/scmpub/components/BillCodeStyle/index.js"
+	]
+}

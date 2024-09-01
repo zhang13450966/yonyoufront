@@ -1,0 +1,7 @@
+{
+	"dependModuleName": [ "scmpub/scmpub/components/VerticalEditTable", "scmpub/scmpub/components/MainOrgRef" ],
+	"dependjs": [
+		"../../../../scmpub/scmpub/components/MainOrgRef/index.js",
+		"../../../../scmpub/scmpub/components/VerticalEditTable/index.js"
+	]
+}
